@@ -7,6 +7,7 @@
 <link rel="stylesheet" media="screen" title="Web View" href="style.css" type="text/css">
 <link rel="stylesheet" media="print" href="printable.css" type="text/css">
 <link rel="alternate stylesheet" media="screen" title="Print Preview" href="printable.css" type="text/css">
+<link rel="icon" href="attesoro.png" type="image/png">
 <%bte.grp onNoResolve=ok %><%bte.inc name=headContent %><%/bte.grp %>
 </head>
 <body>
