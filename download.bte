@@ -8,7 +8,7 @@
 and install the Java2 Runtime Environment version 1.4 or later (J2SE JRE) from java.sun.com 
 if you do not already have it installed.</p>
 
-<p class=even><big><b><a href="attesoro.jar">Download</a></b></big> the latest version of Attesoro 
-(Executable Jar - 168k)</p>
+<p class=even><big><b><a href="attesoro_1_1.jar">Download</a></b></big> the latest version of Attesoro 
+(Executable Jar - 174k)</p>
 <%/bte.tpl%>
 <%/bte.doc%>

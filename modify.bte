@@ -18,9 +18,9 @@ You may <a href="http://www.gjt.org/servlets/JCVSlet/list/gjt/com/Ostermiller/at
 the CVS repository</a> or use your favorite CVS client
 to get the source.  Here is the command that will get the source using the
 common command line client:<br>
-<i>cvs&nbsp;-D&nbsp;":pserver:anonymous@cvs.gjt.org:/gjt/cvsroot"&nbsp;login</i><br>
-use password "guest"<br>
-<i>cvs&nbsp;-D&nbsp;":pserver:anonymous@cvs.gjt.org:/gjt/cvsroot"&nbsp;checkout&nbsp;java/com/Ostermiller</i><br>
+<i>cvs&nbsp;-D&nbsp;":pserver:anoncvs@cvs.gjt.org:/gjt/cvsroot"&nbsp;login</i><br>
+use password "anoncvs"<br>
+<i>cvs&nbsp;-D&nbsp;":pserver:anoncvs@cvs.gjt.org:/gjt/cvsroot"&nbsp;checkout&nbsp;java/com/Ostermiller</i><br>
 <p>
 You will find the source code in the com/Ostermiller/attesoro directory.  Attesoro
 also uses some source code from the com/Ostermiller/util directory.

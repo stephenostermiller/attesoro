@@ -13,7 +13,10 @@ then
     exit 1
 fi
 
-FILES=$@
+latestversion=`grep -oE 'attesoro_[0-9]+_[0-9]+.jar' download.bte | sort | tail -1`
+cp attesoro.jar "$latestversion"
+
+FILES="$@ $latestversion"
 FILES=${FILES/package.html/} 
 if [ "$FILES" ]
 then
@@ -22,3 +25,5 @@ then
 	scp -r $FILES deadsea@ostermiller.org:www/attesoro
     chmod +x install.sh
 fi
+
+rm "$latestversion"
