@@ -11,6 +11,7 @@
 </head>
 <body>
 <div class=page>
+<div class=pagerow>
 <div class=sidebar>
 <img src="attesoro.png" width=122 height=150 alt=Attesoro hspace=10 vspace=10>
 <div class=navlinks>
@@ -38,6 +39,7 @@ name=licenseLinkText %><%/bte.grp %></li>
 <div class=content><%bte.inc name=pageContent %></div>
 <br clear=all>
 <div class=copyright><p>Copyright &copy; 2002-2003 <a href="http://ostermiller.org/contact.pl?regarding=Attesoro" class=mail>Stephen Ostermiller</a></p></div>
+</div>
 </div>
 </div>
 </body>

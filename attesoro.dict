@@ -1,4 +1,4 @@
-personal_ws-1.1 english 304
+personal_ws-1.1 english 305
 aboutItem
 aboutMenuItem
 AbstractTableModel
@@ -20,6 +20,7 @@ addTreeSelectionListener
 addWindowListener
 args
 ArrayList
+ascii
 attesoro
 Attesoro's
 baseName
