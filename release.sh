@@ -22,7 +22,7 @@ if [ "$FILES" ]
 then
 	echo Make: Uploading to web site: $FILES
     chmod -x install.sh
-	scp -r $FILES deadsea@ostermiller.org:www/attesoro
+	cp -r $FILES /home/steveo/pub/www/attesoro
     chmod +x install.sh
 fi
 
