@@ -7,54 +7,55 @@
 <p align=center>A free, open source, translation editor for Java programs.</p>
 
 <p>Java programs that support internationalization (i18n) usually use
-<a href="http://java.sun.com/j2se/1.4/docs/api/java/util/ResourceBundle.html">resource 
+<a href="http://java.sun.com/j2se/1.4.1/docs/api/java/util/ResourceBundle.html">resource 
 bundles</a> and keep their translatable Strings in 
-<a href="http://java.sun.com/j2se/1.4/docs/api/java/util/Properties.html">properties 
+<a href="http://java.sun.com/j2se/1.4.1/docs/api/java/util/Properties.html">properties 
 files</a>. (See Sun's Java Tutorial on 
 <a href="http://java.sun.com/docs/books/tutorial/i18n/">i18n</a>.)  Unfortunately,
 properties files are hard to edit for translators.</p>
 
-<table border=1 summary="Problems with Java internationalization showing how Attesoro can help." cellpadding=3>
+<table class=advantages summary="Problems with Java internationalization showing how Attesoro can help.">
 
-<tr><th width="65%">Java Internationalization Problem</th>
+<tr class=even><th width="65%">Java Internationalization Problem</th>
 
 <th width="35%">Attesoro's Solution</th></tr>
 
-<tr><td>Properties files are stored in
+<tr class=odd><td class=problem>Properties files are stored in
 the ISO 8859-1 character encoding which does not support many international 
 characters.  International characters have to be escaped with \u0000 style
-escape sequences.  Sun recommends a command line tool to convert a document
-from a character set to ISO 8859-1 with escape sequences.  Most translators
-find this confusing.</td>
+escape sequences.  Sun recommends a command line tool, 
+<a href="http://java.sun.com/j2se/1.4.1/docs/tooldocs/tools.html#intl">native2ascii</a>,
+to convert a document from a character set to ISO 8859-1 with escape sequences.  
+Most translators would rather save documents directly and never have to use a 
+command line.</td>
 
-<td>A translator can enter international characters directly
+<td class=solution>A translator can enter international characters directly
 into Attesoro and Attesoro will save the file in the correct format with escape
 sequences.</td></tr>
 
-<tr><td>Each language is stored in a separate properties file.  This makes life
-difficult for the translator because s/he must constantly swap back and forth
-between the file in the original language and the translated file.</td>
+<tr class=even><td class=problem>The translation for each language is stored in a separate file.  A translator must
+constantly swap back and forth between the file in the original language and the translated 
+file.</td>
 
-<td>Attesoro shows the untranslated text directly
-above the area in which the translated text should be typed.</td></tr>
+<td class=solution>Attesoro shows the untranslated text and the translator can type the translation directly
+below it.</td></tr>
 
-<tr><td>When the programmers expand the program and add new strings that need
+<tr class=odd><td class=problem>When the programmers expand the program and add new strings that need
 to be translated, translators may have a hard time figuring out which strings
 have not been translated yet.</td>
 
-<td>Attesoro shows a list of all translatable strings
-and displays the ones that have not yet been translated in blue.</td></tr>
+<td class=solution>Attesoro shows items that have not yet been translated in blue while translated
+items are shown in black.</td></tr>
 
-<tr><td>If a programmer decides that they would like to change the name of a 
+<tr class=even><td class=problem>If a programmer decides that they would like to change the name of a 
 translation key, they have to change it in a file for every language.</td>
 
-<td>Attesoro lets you change the name of the key once and saves the changes
-in the file for each language.</td></tr>
+<td class=solution>Attesoro will change the name of the key in all files at once.</td></tr>
 
-<tr><td>When translating in a text editor, have no choice but to accept all
-or none of your changes when you save the file.</td>
+<tr class=odd><td class=problem>When using a text editor, a translator has no choice but to accept all
+or none of the changes when saving the file.</td>
 
-<td>Attesoro displays keys with changed translations in green and allows you
+<td class=solution>Attesoro displays keys with changed translations in green and allows you
 to revert individual keys.</td></tr>
 </table>
 <%/bte.tpl%>

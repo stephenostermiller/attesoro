@@ -1,25 +1,72 @@
 body { 
   color:black;
   background-color:white;  
+  display:table;
+  padding:0cm;
+  margin:0cm;
+  height:100%;
 }
-ul.sidebar {
-  margin-left:0;
-  padding-left:10px;
-  padding-right:10px;
-  margin-right:0;
+a:link {
+  color:#0c600c;
 }
-ul.sidebar li {
-  padding-bottom:4px;
-  margin-left:1cm;
-  padding-left:0cm;
+.page {
+  display:table-row;
 }
-ul#elementDescriptions {
+.navlinks {
+  text-align:left;
+}
+.sidebar ul {
+  padding:.3cm 0cm 0cm .5cm;
+  margin:0cm;
   list-style:none;
 }
-table.sidebar {
-  border-left:thin black ridge;
-  border-bottom:thin black ridge;
+.sidebar ul li {
+  padding:.1cm 0cm 0cm 0cm;
+  margin:0cm;
+}
+.sidebar {
+  background:#e59f70;
+  display:table-cell;
+  width:122;
+  text-align:center;
+  vertical-align:top;
+}
+div.pagecontent {
+  display:table-cell;
+  padding:.3cm;
+  border:thin black ridge;
+  background:#aaaaaa;
+  vertical-align:top;
+}
+table.advantages {
+  border:none;
+}
+.even {
+  background:#dbd9b1;
+}
+.odd {
+  background:#b1c4d1;
+}
+table.advantages tr td, table.advantages tr th {
+  border:none;
+  padding:.2cm;
+  margin:0cm;
+  -moz-border-radius:3px;
 }
 a.mail {
   font-style:italic;
+}
+.userList{
+  list-style:none;
+  padding:0cm;
+  margin:0cm 0cm .5cm 0cm;
+}
+.userList li{
+  padding:.3cm;
+  -moz-border-radius:3px;
+}
+p.even, p.odd {
+  margin:0;
+  padding:.3cm .1cm .3cm .1cm;
+  -moz-border-radius:3px;
 }

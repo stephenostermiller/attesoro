@@ -4,16 +4,17 @@
 <head><title><%bte.inc name=pageTitle %></title><%bte.grp onNoResolve=warning %>
 <meta name="description" content="<%bte.inc name=description %>"><%/bte.grp %><%bte.grp onNoResolve=warning %>
 <meta name="keywords" content="<%bte.inc name=keywords %>"><%/bte.grp %>
-<!--<base href="http://ostermiller.org/attessoro/">-->
 <link rel="stylesheet" media="screen" title="Web View" href="style.css" type="text/css">
 <link rel="stylesheet" media="print" href="printable.css" type="text/css">
 <link rel="alternate stylesheet" media="screen" title="Print Preview" href="printable.css" type="text/css">
 <%bte.grp onNoResolve=ok %><%bte.inc name=headContent %><%/bte.grp %>
 </head>
 <body>
-<table align=right hspace=10 class=sidebar><tr><td>
+<div class=page>
+<div class=sidebar>
 <img src="attesoro.png" width=122 height=150 alt=Attesoro hspace=10 vspace=10>
-<ul class=sidebar>
+<div class=navlinks>
+<ul>
 <li><%bte.grp onDefault=ok %><%bte.inc 
 name=homeLinkText %><%/bte.grp %></li>
 <li><%bte.grp onDefault=ok %><%bte.inc 
@@ -24,15 +25,21 @@ name=downloadLinkText %><%/bte.grp %><%bte.grp onNoResolve=ok %>
 <li><%bte.grp onDefault=ok %><%bte.inc 
 name=instructionsLinkText %><%/bte.grp %></li>
 <li><%bte.grp onDefault=ok %><%bte.inc 
+name=usersLinkText %><%/bte.grp %></li>
+<li><%bte.grp onDefault=ok %><%bte.inc 
 name=hackingLinkText %><%/bte.grp %></li>
 <li><%bte.grp onDefault=ok %><%bte.inc 
 name=licenseLinkText %><%/bte.grp %></li>
 </ul>
-</td></tr></table>
+</div>
+</div>
+<div class=pagecontent>
 <h1 align=center><a name="content"><%bte.inc name=pageTitle %></a></h1>
 <div class=content><%bte.inc name=pageContent %></div>
 <br clear=all>
 <div class=copyright><p>Copyright &copy; 2002-2003 <a href="http://ostermiller.org/contact.pl?regarding=Attesoro" class=mail>Stephen Ostermiller</a></p></div>
+</div>
+</div>
 </body>
 </html><%/bte.tpl%>
 <%bte.tpl name=homeLinkText %><a href="./">Overview</a><%/bte.tpl%>
@@ -40,5 +47,6 @@ name=licenseLinkText %><%/bte.grp %></li>
 <%bte.tpl name=downloadLinkText %><a href="download.html">Download</a><%/bte.tpl%>
 <%bte.tpl name=instructionsLinkText %><a href="instructions.html">Instructions</a><%/bte.tpl%>
 <%bte.tpl name=hackingLinkText %><a href="modify.html">Hacking</a><%/bte.tpl%>
+<%bte.tpl name=usersLinkText %><a href="users.html">Users</a><%/bte.tpl%>
 <%bte.tpl name=licenseLinkText %><a href="license.html">License</a><%/bte.tpl%>
 <%/bte.doc%>

@@ -4,8 +4,11 @@
 <%bte.tpl name=keywords %>attesoro, download, download, jar, java, jre, j2se<%/bte.tpl%>
 <%bte.tpl name=downloadLinkText %><b>Download</b><%/bte.tpl%>
 <%bte.tpl name=pageContent %>
-<p><big><b><a href="http://java.sun.com/j2se/1.4/download.html" target="_new">Download</a></b></big> and install the Java2 Runtime Environment version 1.4 (J2SE JRE) from java.sun.com if you do not already have it installed.</p>
+<p class=odd><big><b><a href="http://java.sun.com/j2se/downloads.html" target="_blank">Download</a></b></big>
+and install the Java2 Runtime Environment version 1.4 or later (J2SE JRE) from java.sun.com 
+if you do not already have it installed.</p>
 
-<p><big><b><a href="attesoro.jar">Download</a></b></big> the latest version of Attesoro (Executable Jar - 163k)</p>
+<p class=even><big><b><a href="attesoro.jar">Download</a></b></big> the latest version of Attesoro 
+(Executable Jar - 163k)</p>
 <%/bte.tpl%>
 <%/bte.doc%>

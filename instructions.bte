@@ -9,8 +9,8 @@
 Some systems may not support executable jar files correctly.  
 If double clicking on the jar file does not work, try the following 
 command lines:<br>
-<line><b>java&nbsp;-jar&nbsp;attesoro.jar</b></line><br>
-<line><b>java&nbsp;-classpath&nbsp;attesoro.jar&nbsp;com.Ostermiller.attesoro.Editor</b></line></p>
+<line><i>java&nbsp;-jar&nbsp;attesoro.jar</i></line><br>
+<line><i>java&nbsp;-classpath&nbsp;attesoro.jar&nbsp;com.Ostermiller.attesoro.Editor</i></line></p>
 
 <h2>Finding Files to Translate</h2>
 <p>To use Attesoro you need to be able to open a file to translate.
@@ -19,7 +19,7 @@ to find the translatable files.  Jar files are the same as zip files so you
 can rename the jar file to a zip file and then use any unzip program to extract
 the contents.  Alternately you can use the jar tool that comes with Java.  It
 accepts a command line something like this:<br>
-<line><b>jar&nbsp;xfv&nbsp;file.jar</b></line><br>
+<line><i>jar&nbsp;xfv&nbsp;file.jar</i></line><br>
 Translation files have the extension ".properties".</p>
 
 <h2>Translating</h2>

@@ -1,18 +1,43 @@
 body { 
   color:black;
-  background-color:white;  
+  background-color:white; 
 }
-ul#elementDescriptions {
-  list-style:none;
+a {
+  color:black;
+  text-decoration:none;
 }
-table.sidebar {
+.sidebar {
   display:none;
 }
-a:link {
-  color:black;
-  text-decoration:none;
+table.advantages {
+  border:thin black ridge;
 }
-a:visited {
-  color:black;
-  text-decoration:none;
+table.advantages tr td, table.advantages tr th { 
+  border:thin black ridge;
+  padding:.2cm;
+  margin:0cm;
+  -moz-border-radius:3px;
+}
+a.mail {
+  font-style:italic;
+}
+.userList{
+  list-style:none;
+  padding:0cm;
+  margin:0cm 0cm .5cm 0cm;
+}
+.userList li{
+  border:thin black ridge;
+  padding:.3cm;
+  -moz-border-radius:3px;
+}
+p.even, p.odd {
+  margin:0;
+  padding:.3cm .1cm .3cm .1cm;
+}
+p.even, p.odd {
+  margin:0;
+  padding:.3cm .1cm .3cm .1cm;
+  -moz-border-radius:3px;
+  border:thin black ridge;
 }
