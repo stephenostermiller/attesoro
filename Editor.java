@@ -1,8 +1,12 @@
 /*
  * Translation editor for Java properties files.
  *
- * Copyright (c) 2002 by Stephen Ostermiller
+ * Copyright (c) 2002-2004 by Stephen Ostermiller
  * http://ostermiller.org/contact.pl?regarding=Attesoro
+ *
+ * Copyright (c) 2004 by Gerhard Leibrock
+ * http://www.wie-virtuell.de/attesoro/
+ * attesoro@wie-virtuell.de
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU Library General Public License as published
@@ -38,7 +42,7 @@ import com.Ostermiller.util.Browser;
 
 public class Editor {
 
-	private static String version = "1.3";
+	private static String version = "1.5";
 	private static ResourceBundle labels = ResourceBundle.getBundle("com.Ostermiller.attesoro.Editor",  Locale.getDefault());
 	private static UberProperties props = new UberProperties();
 	private static String[] userFile = new String[] {".java", "com","Ostermiller","attesoro","Editor.ini"};
@@ -78,6 +82,12 @@ public class Editor {
 	private Name getName(int ind){
 		return (Name)names.get(ind);
 	}
+
+	/**
+	 * Identifies "all countries" String, meaning user does not want
+	 * to specify a locale for a specific country
+	 */
+	private String countryAll = "";
 
 	private void addKey(String name){
 		saveTextAreas();
@@ -160,6 +170,9 @@ public class Editor {
 	}
 
 	private void fillNameData(){
+		// check, if the TREE contains data
+		if(names == null ) return;
+
 		TranslationData data = null;
 		if (workingNode != null) data = (TranslationData)workingNode.getUserObject();
 		if (data != null) data.modified = 0;
@@ -322,18 +335,18 @@ public class Editor {
 		}
 	}
 
-	private TableModel tableModel = new AbstractTableModel() {
-		public int getColumnCount() {
+	private TableModel tableModel = new AbstractTableModel(){
+		public int getColumnCount(){
 			return 1;
 		}
-		public String getColumnName(int col) {
+		public String getColumnName(int col){
 			return Editor.labels.getString("names");
 		}
-		public int getRowCount() {
+		public int getRowCount(){
 			if (names == null) return 0;
 			return names.size();
 		}
-		public Object getValueAt(int row, int col) {
+		public Object getValueAt(int row, int col){
 			return getName(row);
 		}
 	};
@@ -354,6 +367,9 @@ public class Editor {
 		return true;
 	}
 
+	/**
+	 * Load a properties file and build the GUI
+	 */
 	public void load(File f) throws IOException {
 		if (f == null) throw new IOException();
 		File parent = f.getCanonicalFile().getParentFile();
@@ -367,7 +383,10 @@ public class Editor {
 		frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
 		UberProperties props = new UberProperties();
 		props.load(new FileInputStream(f));
+		// Retrieve all KEY pairs from the properties file
+		// (the left part of the <KEY>=>VALUE> inside the .properties file
 		names = getNames(props.propertyNames());
+		// sort it, add it to the GUI
 		Collections.sort(names);
 		top.removeAllChildren();
 		top.setUserObject(new TranslationData(baseName, "", props));
@@ -389,7 +408,11 @@ public class Editor {
 				}
 				if (localeData.length > 2){
 					if (localeData[2].length() == 0) return false;
-					if (!isUpper(localeData[2])) return false;
+						// java.sun.com/docs/books/tutorial/i18n/locale/create.html
+						// The variant codes conform to no standard.
+						// They are arbitrary and specific to your application.
+						// If you create Locale objects with variant codes only
+						// your application will know how to deal with them.
 				}
 				return true;
 			 }
@@ -645,23 +668,23 @@ public class Editor {
 		top = new DefaultMutableTreeNode(new TranslationData("", "", new UberProperties()));
 		treeModel = new DefaultTreeModel(top);
 		tree = new JTree(treeModel);
-		tree.addMouseListener(new MouseAdapter() {
-			public void mousePressed(MouseEvent e) {
+		tree.addMouseListener(new MouseAdapter(){
+			public void mousePressed(MouseEvent e){
 				int selRow = tree.getRowForLocation(e.getX(), e.getY());
 				if (!tree.isRowSelected(selRow)){
 					// select the row
 					tree.setSelectionRow(selRow);
 				}
 				if(selRow != -1){
-					if(e.isPopupTrigger() || (e.getModifiers() & InputEvent.BUTTON3_MASK) != 0) {
+					if(e.isPopupTrigger() || (e.getModifiers() & InputEvent.BUTTON3_MASK) != 0){
 						showPopUpSmart(treePopup, e.getComponent(), e.getX(), e.getY());
 					}
 				}
 			}
 		});
 		tree.getSelectionModel().setSelectionMode(TreeSelectionModel.SINGLE_TREE_SELECTION);
-		tree.addTreeSelectionListener(new TreeSelectionListener() {
-			public void valueChanged(TreeSelectionEvent e) {
+		tree.addTreeSelectionListener(new TreeSelectionListener(){
+			public void valueChanged(TreeSelectionEvent e){
 				saveTextAreas();
 				workingNode = (DefaultMutableTreeNode) tree.getLastSelectedPathComponent();
 				setTextAreas();
@@ -671,7 +694,7 @@ public class Editor {
 		tree.setCellRenderer(new DefaultTreeCellRenderer(){
 			public Component getTreeCellRendererComponent(
 					JTree tree, Object value, boolean sel, boolean expanded,
-					boolean leaf, int row, boolean hasFocus) {
+					boolean leaf, int row, boolean hasFocus){
 				super.getTreeCellRendererComponent(
 					tree, value, sel, expanded,
 					leaf, row, hasFocus
@@ -684,21 +707,21 @@ public class Editor {
 		});
 		table = new JTable(tableModel);
 		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-		table.addMouseListener(new MouseAdapter() {
-			public void mousePressed(MouseEvent e) {
+		table.addMouseListener(new MouseAdapter(){
+			public void mousePressed(MouseEvent e){
 				int selRow = table.rowAtPoint(e.getPoint());
 				if (!table.isRowSelected(selRow)){
 					// select the row
 					table.setRowSelectionInterval(selRow, selRow);
 				}
 				if(selRow != -1){
-					if(e.isPopupTrigger() || (e.getModifiers() & InputEvent.BUTTON3_MASK) != 0) {
+					if(e.isPopupTrigger() || (e.getModifiers() & InputEvent.BUTTON3_MASK) != 0){
 						showPopUpSmart(tablePopup, e.getComponent(), e.getX(), e.getY());
 					}
 				}
 			}
 		});
-		table.addKeyListener(new KeyAdapter() {
+		table.addKeyListener(new KeyAdapter(){
 			public void keyReleased(KeyEvent e){
 				if (e.getKeyCode() == KeyEvent.VK_DELETE){
 					deleteKeyConfirm();
@@ -721,12 +744,12 @@ public class Editor {
 			}
 		});
 
-		table.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
-			public void valueChanged(ListSelectionEvent e) {
+		table.getSelectionModel().addListSelectionListener(new ListSelectionListener(){
+			public void valueChanged(ListSelectionEvent e){
 				if (e.getValueIsAdjusting()) return;
 				ListSelectionModel lsm = (ListSelectionModel)e.getSource();
 				saveTextAreas();
-				if (lsm.isSelectionEmpty()) {
+				if (lsm.isSelectionEmpty()){
 					workingName = null;
 					workingIndex = -1;
 				} else {
@@ -760,6 +783,7 @@ public class Editor {
 				splitpaneLocation = 100;
 			}
 		} catch (NumberFormatException e){
+			splitpaneLocation = 100;
 		}
 		editingSplitPane.setDividerLocation(splitpaneLocation);
 
@@ -770,6 +794,7 @@ public class Editor {
 				splitpaneLocation = 250;
 			}
 		} catch (NumberFormatException e){
+			splitpaneLocation = 250;
 		}
 		textSplitPane.setDividerLocation(splitpaneLocation);
 
@@ -780,11 +805,12 @@ public class Editor {
 				splitpaneLocation = 100;
 			}
 		} catch (NumberFormatException e){
+			splitpaneLocation = 100;
 		}
 		navigationSplitPane.setDividerLocation(splitpaneLocation);
 
-		frame.addWindowListener(new WindowAdapter() {
-			public void windowClosing(WindowEvent e) {
+		frame.addWindowListener(new WindowAdapter(){
+			public void windowClosing(WindowEvent e){
 				exitRoutine();
 			}
 		});
@@ -813,7 +839,7 @@ public class Editor {
 						return (Editor.labels.getString("translation_files"));
 					}
 				});
-				if(chooser.showOpenDialog(frame) == JFileChooser.APPROVE_OPTION) {
+				if(chooser.showOpenDialog(frame) == JFileChooser.APPROVE_OPTION){
 					props.setProperty("open_directory", chooser.getCurrentDirectory().getAbsolutePath());
 					try {
 						File f = chooser.getSelectedFile();
@@ -920,7 +946,7 @@ public class Editor {
 						labels.getString("about_message"),
 						new Object[] {
 							version,
-							"2002 Stephen Ostermiller http://ostermiller.org/contact.pl?regarding=Attesoro"
+							"2002-2004 Stephen Ostermiller http://ostermiller.org/contact.pl?regarding=Attesoro"
 						}
 					),
 					labels.getString("about_title"),
@@ -966,6 +992,7 @@ public class Editor {
 		ArrayList languages = new ArrayList();
 		ArrayList countries = new ArrayList();
 		ArrayList variants = new ArrayList();
+		this.countryAll = labels.getString("all");
 		countries.add(new LocaleElement(labels.getString("all"), null));
 		variants.add(new LocaleElement(labels.getString("all"), null));
 		for (Enumeration e = labels.getKeys(); e.hasMoreElements();){
@@ -985,9 +1012,12 @@ public class Editor {
 		newLocalePanel.add(new JLabel(labels.getString("language")), 0);
 		newLocalePanel.add(languageBox, 1);
 		countryBox = new JComboBox(countries.toArray(new LocaleElement[countries.size()]));
+		countryBox.addItemListener(new CountryItemListener());
 		newLocalePanel.add(new JLabel(labels.getString("country")), 2);
 		newLocalePanel.add(countryBox, 3);
 		variantBox = new JComboBox(variants.toArray(new LocaleElement[variants.size()]));
+		variantBox.setEditable(true);
+		variantBox.setEnabled(false);
 		newLocalePanel.add(new JLabel(labels.getString("variant")), 4);
 		newLocalePanel.add(variantBox, 5);
 
@@ -1140,7 +1170,6 @@ public class Editor {
 		}
 	}
 
-
 	private ActionListener addLangActionListener = new ActionListener(){
 		public void actionPerformed(ActionEvent e){
 			int result = JOptionPane.showConfirmDialog(
@@ -1154,7 +1183,15 @@ public class Editor {
 				saveTextAreas();
 				String language = ((LocaleElement)(languageBox.getSelectedItem())).code;
 				String country = ((LocaleElement)(countryBox.getSelectedItem())).code;
-				String variant = ((LocaleElement)(variantBox.getSelectedItem())).code;
+				// check, if the user selected an existing item, or
+				// specified a new one by hand (editor component)
+				String variant = null;
+				try {
+					variant = ((LocaleElement)(variantBox.getSelectedItem())).code;
+				} catch(Exception ex){
+					// user did not select an existing entry
+					variant = (variantBox.getEditor().getItem().toString()).toUpperCase();
+				}
 				try {
 					DefaultMutableTreeNode newNode = createTreeNode(top, language, country, variant, null);
 					treeModel.reload();
@@ -1165,12 +1202,13 @@ public class Editor {
 					globalModified = true;
 				} catch (IOException iox){
 					// cannot happen, stream is null.
+					System.err.println(iox);
 				}
 			}
 		}
 	};
 
-	private void exitRoutine() {
+	private void exitRoutine(){
 		boolean exit = true;
 		if (someModified()){
 			exit = false;
@@ -1254,9 +1292,9 @@ public class Editor {
 			Insets insets = parent.getInsets();
 			width -= insets.left + insets.right;
 			int numberComponents = parent.getComponentCount();
-			for (int i = 0; i < numberComponents; i++) {
+			for (int i = 0; i < numberComponents; i++){
 				Component c = parent.getComponent(i);
-				if (c.isVisible()) {
+				if (c.isVisible()){
 					Dimension d = c.getPreferredSize();
 					d.width = width;
 					if (i == numberComponents - 1 &&
@@ -1282,9 +1320,9 @@ public class Editor {
 		public Dimension preferredLayoutSize(Container parent){
 			Dimension preferredSize = new Dimension(0, 0);
 			int numberComponents = parent.getComponentCount();
-			for (int i = 0; i < numberComponents; i++) {
+			for (int i = 0; i < numberComponents; i++){
 				Component c = parent.getComponent(i);
-				if (c.isVisible()) {
+				if (c.isVisible()){
 					Dimension d = c.getPreferredSize();
 					if (d.width > preferredSize.width) preferredSize.width = d.width;
 					preferredSize.height += d.height;
@@ -1299,6 +1337,21 @@ public class Editor {
 		 * Removes the specified component from the layout.
 		 */
 		public void removeLayoutComponent(Component comp){
+		}
+	}
+
+	/**
+	 * Enables/disables VARIANT box
+	 * if country == ALL -> *no* variant selection possible
+	 * if country != ALL -> variant selection possible
+	 */
+	private class CountryItemListener implements ItemListener {
+		public void  itemStateChanged(ItemEvent e){
+			if(e.getItem().toString().equals(countryAll)){
+				variantBox.setEnabled(false);
+			} else {
+				variantBox.setEnabled(true);
+			}
 		}
 	}
 }

@@ -1,4 +1,4 @@
-personal_ws-1.1 en 349
+personal_ws-1.1 en 358
 aboutItem
 aboutMenuItem
 AbstractTableModel
@@ -6,6 +6,7 @@ ActionEvent
 ActionListener
 actionPerformed
 addActionListener
+addItemListener
 addKey
 addKeyActionListener
 addKeyListener
@@ -21,6 +22,7 @@ addTreeSelectionListener
 addWindowListener
 alreadyTranslatedFileMatcher
 anoncvs
+Antunes
 args
 ArrayList
 ascii
@@ -33,7 +35,6 @@ br
 bte
 changedUpdate
 changelog
-Changelog
 charAt
 ClassLoader
 clearSelection
@@ -43,7 +44,9 @@ commentLabelPanel
 commentLabelPanelLayout
 commentPane
 compareTo
+countryAll
 countryBox
+CountryItemListener
 countryNode
 createTreeNode
 CTRL
@@ -168,6 +171,9 @@ isSelectionEmpty
 isTop
 isUpper
 isVisible
+ItemEvent
+ItemListener
+itemStateChanged
 java
 JCheckBox
 JComboBox
@@ -197,6 +203,7 @@ languageNode
 lastFind
 layoutContainer
 LayoutManager
+Leibrock
 listFiles
 ListSelectionEvent
 ListSelectionListener
@@ -205,6 +212,7 @@ loadMenuItem
 localeData
 LocaleElement
 lsm
+Luiz
 Magnaghi
 menuBar
 MessageFormat
@@ -225,6 +233,7 @@ nextNode
 nextToken
 nodeList
 nodeName
+NullPointerException
 numberComponents
 NumberFormatException
 oldName

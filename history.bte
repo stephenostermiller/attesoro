@@ -5,6 +5,22 @@
 <%bte.tpl name=pageContent %>
 <h3>Version History</h3>
 
+
+<h4>Version 1.5</h4>
+Many thanks to <a href="http://www.wie-virtuell.de/attesoro/">Gerhard Leibrock</a> 
+for providing these fixes:
+<ul>
+<li>NullPointerException in fillNameData fixed.</li>
+<li>Relaxed naming requirements of variants, don't need to be all caps</li>
+<li>Made variant selection in dialog disabled when country==all.</li>
+</ul>
+
+<h4>Version 1.4</h4>
+<ul>
+<li>Portuguese translation contributed by Luiz Antunes.</li>
+<li>Fixes for reading properties files: whitespace at end of lines preserved, whitespace allowed before comments, backslash allowed at end of file.</li>
+</ul>
+
 <h4>Version 1.3</h4>
 <ul>
 <li>Fixed partial crash when deleting the last key in the translation key list.</li>

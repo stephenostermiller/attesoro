@@ -4,18 +4,18 @@
 <%bte.tpl name=keywords %>attesoro, download, download, jar, java, jre, j2se<%/bte.tpl%>
 <%bte.tpl name=downloadLinkText %><b>Download</b><%/bte.tpl%>
 <%bte.tpl name=pageContent %>
-<p class=odd><big><b><a href="http://java.sun.com/webapps/getjava/BrowserRedirect" target="_blank">Download</a></b></big>
+<p class=odd><big><b><a href="http://java.sun.com/webapps/getjava/BrowserRedirect?locale=en&host=www.java.com:80" target="_blank">Download</a></b></big>
 and install the Java2 Runtime Environment version 1.4 or later (J2SE JRE) from java.sun.com 
 if you do not already have it installed.</p>
 
-<p class=even><big><b><a href="attesoro_1_3.jar">Download</a></b></big> the latest version (Version 1.3) of Attesoro 
-(Executable Jar - 183k)</p>
+<p class=even><big><b><a href="attesoro_1_5.jar">Download</a></b></big> the latest version (Version 1.4) of Attesoro 
+(Executable Jar - 197k)</p>
 
 <p>
+Version 1.5 - From <a href="http://www.wie-virtuell.de/attesoro/">Gerhard Leibrock</a>: Better variant handling, crash fix.<br>
+Version 1.4 - Portuguese translation, several fixes for reading properties files correctly.<br>
 Version 1.3 - crash fix, menu accelerators.<br>
-Version 1.2 - crash fix, open dialog changes.<br>
-Version 1.1 - blank lines handled properly.<br>
-<a href="history.html">Older Changes</a><br>
+<a href="history.html">Complete change history</a><br>
 </p>
 <%/bte.tpl%>
 <%/bte.doc%>

@@ -81,6 +81,9 @@ p.even, p.odd, p.evenodd, li.even, li.odd, li.evenodd, div.even, div.odd, table.
   padding:.3cm .1cm .3cm .1cm;
   -moz-border-radius:3px;
 }
+table.even, table.odd {
+  width:100%;
+}
 .newsItem {
   font-size:smaller;
   margin-top:1.5cm;
