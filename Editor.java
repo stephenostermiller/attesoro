@@ -919,6 +919,24 @@ public class Editor {
 		langMenu.add(addLangMenuItem);
 		editMenu.add(langMenu);
 		menuBar.add(editMenu);
+		JMenu actionsMenu = new JMenu(labels.getString("action_menu_name"));
+		actionsMenu.setMnemonic(labels.getString("action_menu_key").charAt(0));
+		actionsMenu.getAccessibleContext().setAccessibleDescription(labels.getString("action_menu_description"));
+		JMenuItem nextKeyMenuItem = new JMenuItem(Editor.labels.getString("next_key_menu_name"));
+		nextKeyMenuItem.setMnemonic(labels.getString("next_key_menu_key").charAt(0));
+		nextKeyMenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, ActionEvent.CTRL_MASK));
+		nextKeyMenuItem.getAccessibleContext().setAccessibleDescription(labels.getString("next_key_menu_description"));
+		nextKeyMenuItem.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e){
+				if (workingIndex < names.size()){
+					workingIndex++;
+					table.getSelectionModel().setSelectionInterval(workingIndex,workingIndex);
+					workingName = getName(workingIndex).name;
+				}
+			}
+		});
+		actionsMenu.add(nextKeyMenuItem);
+		menuBar.add(actionsMenu);
 		JMenu helpMenu = new JMenu(labels.getString("help_menu_name"));
 		helpMenu.setMnemonic(labels.getString("help_menu_key").charAt(0));
 		helpMenu.getAccessibleContext().setAccessibleDescription(labels.getString("help_menu_description"));
@@ -928,9 +946,9 @@ public class Editor {
 		websiteMenuItem.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
 				try {
-						Browser.displayURL("http://ostermiller.org/attesoro/");
+					Browser.displayURL("http://ostermiller.org/attesoro/");
 				} catch (IOException ioe){
-						System.err.println(ioe.getMessage());
+					System.err.println(ioe.getMessage());
 				}
 			}
 		});
