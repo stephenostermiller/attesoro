@@ -1,0 +1,15 @@
+<%bte.doc super="page.bte"%>
+<%bte.tpl name=pageTitle %>Attesoro Users<%/bte.tpl%>
+<%bte.tpl name=description %>A list of Java programs that have been translated with Attesoro.<%/bte.tpl%>
+<%bte.tpl name=keywords %>attesoro, user, users, projects, project, program, programs<%/bte.tpl%>
+<%bte.tpl name=usersLinkText %><b>Users</b><%/bte.tpl%>
+<%bte.tpl name=pageContent %>
+<ul class=userList>
+<li class=odd><a href="/tulipchain/">Tulip Chain</a> - A link checker and editor for the Open Directory Project that has been translated into many languages for international editors.</li>
+</ul>
+
+If you have used Attesoro for your project, and you would like to let others know how it helped, 
+Stephen would be glad to put a link to your project here.
+
+<%/bte.tpl%>
+<%/bte.doc%>
