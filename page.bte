@@ -17,36 +17,38 @@
 <img src="attesoro.png" width=122 height=150 alt=Attesoro hspace=10 vspace=10>
 <div class=navlinks>
 <ul>
-<li><%bte.grp onDefault=ok %><%bte.inc 
-name=homeLinkText %><%/bte.grp %></li>
-<li><%bte.grp onDefault=ok %><%bte.inc 
+<li><div class=odd><%bte.grp onDefault=ok %><%bte.inc 
+name=homeLinkText %><%/bte.grp %></div>
+<li><div class=even><%bte.grp onDefault=ok %><%bte.inc 
 name=instructionsLinkText %><%/bte.grp %>
 <ul>
-<li><%bte.grp onDefault=ok %><%bte.inc 
+<li><div class=odd><%bte.grp onDefault=ok %><%bte.inc 
 name=downloadLinkText %><%/bte.grp %><%bte.grp onNoResolve=ok %>
-<%bte.inc name=downloadLinks %><%/bte.grp %></li>
-<li><%bte.grp onDefault=ok %><%bte.inc 
-name=runLinkText %><%/bte.grp %></li>
-<li><%bte.grp onDefault=ok %><%bte.inc 
-name=openLinkText %><%/bte.grp %></li>
-<li><%bte.grp onDefault=ok %><%bte.inc 
-name=translateLinkText %><%/bte.grp %></li>
-<li><%bte.grp onDefault=ok %><%bte.inc 
-name=createLinkText %><%/bte.grp %></li>
-<li><%bte.grp onDefault=ok %><%bte.inc 
-name=saveLinkText %><%/bte.grp %></li>
+<%bte.inc name=downloadLinks %><%/bte.grp %></div>
+<li><div class=even><%bte.grp onDefault=ok %><%bte.inc 
+name=runLinkText %><%/bte.grp %></div>
+<li><div class=odd><%bte.grp onDefault=ok %><%bte.inc 
+name=openLinkText %><%/bte.grp %></div>
+<li><div class=even><%bte.grp onDefault=ok %><%bte.inc 
+name=translateLinkText %><%/bte.grp %></div>
+<li><div class=odd><%bte.grp onDefault=ok %><%bte.inc 
+name=createLinkText %><%/bte.grp %></div>
+<li><div class=even><%bte.grp onDefault=ok %><%bte.inc 
+name=saveLinkText %><%/bte.grp %></div>
 </ul>
-</li>
-<li><%bte.grp onDefault=ok %><%bte.inc 
-name=screenshotLinkText %><%/bte.grp %></li>
-<li><%bte.grp onDefault=ok %><%bte.inc 
-name=usersLinkText %><%/bte.grp %></li>
-<li><%bte.grp onDefault=ok %><%bte.inc 
-name=hackingLinkText %><%/bte.grp %></li>
-<li><%bte.grp onDefault=ok %><%bte.inc 
-name=aboutLinkText %><%/bte.grp %></li>
-<li><%bte.grp onDefault=ok %><%bte.inc 
-name=licenseLinkText %><%/bte.grp %></li>
+</div>
+<li><div class=odd><%bte.grp onDefault=ok %><%bte.inc 
+name=screenshotLinkText %><%/bte.grp %></div>
+<li><div class=even><%bte.grp onDefault=ok %><%bte.inc 
+name=usersLinkText %><%/bte.grp %></div>
+<li><div class=odd><%bte.grp onDefault=ok %><%bte.inc 
+name=hackingLinkText %><%/bte.grp %></div>
+<li><div class=even><%bte.grp onDefault=ok %><%bte.inc 
+name=aboutLinkText %><%/bte.grp %></div>
+<li><div class=odd><%bte.grp onDefault=ok %><%bte.inc 
+name=licenseLinkText %><%/bte.grp %></div>
+<li><div class=even><%bte.grp onDefault=ok %><%bte.inc 
+name=similarProgramsText %><%/bte.grp %></div>
 </ul>
 </div>
 
@@ -83,4 +85,5 @@ and send the translated file to Stephen. Existing locales:
 <%bte.tpl name=createLinkText %><a href="create.html">Add Locale</a><%/bte.tpl%>
 <%bte.tpl name=saveLinkText %><a href="save.html">Save</a><%/bte.tpl%>
 <%bte.tpl name=aboutLinkText %><a href="about.html">About</a><%/bte.tpl%>
+<%bte.tpl name=similarProgramsText %><a href="similar.html">Similar Programs</a><%/bte.tpl%>
 <%/bte.doc%>

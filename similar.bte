@@ -1,0 +1,38 @@
+<%bte.doc super="page.bte"%>
+<%bte.tpl name=pageTitle %>Software Similar to Attesoro<%/bte.tpl%>
+<%bte.tpl name=description %>A list of programs besides Attesoro that manage Java resource bundles and translations.<%/bte.tpl%>
+<%bte.tpl name=keywords %>similar, programs, software, Resource Bundle Manager, resource, bundle, manager, ibm, icu, translation, translations, attesoro<%/bte.tpl%>
+<%bte.tpl name=usersLinkText %><b>Users</b><%/bte.tpl%>
+<%bte.tpl name=pageContent %>
+<div class=odd>
+<a href="http://oss.software.ibm.com/cvs/icu4j/~checkout~/unicodetools/com/ibm/rbm/docs/index.html">IBM's Resource Bundle Manager written by Jared Jackson</a><br>
+<img alt="Resource Bundle Manager screenshot" width=662 height=368 src="http://ostermiller.org/attesoro/resourcemanager.png"><br>
+Download: <a href="http://oss.software.ibm.com/icu4j/demo_tools/RBManager.html">Resource Bundle Manager download page</a><br>
+License: <a href="http://oss.software.ibm.com/cvs/icu/~checkout~/icu/license.html">Open Source - ICU License 1.8.1</a>
+<p>Resource Bundle Manager is a capable program with some features not available in Attesoro.
+It puts comments on all translated items that include metadata such as who did the translation and when
+the translation was done.  It can create groups for items to be translated.  It also has a nice search feature and it can show statistics including
+number of untranslated items for each language.</p>
+<p>Like Attesoro, it is written in Java.  It has
+a similar look and feel.  Its website contains complete documentation including a tutorial.</p>
+<p>It does however, have some significant disadvantages to Attesoro:
+<ol>
+<li>It is harder to start because it is not packaged in an executable jar file.  The documentation gives a
+command line to use.  Even worse, the command line is incorrect because the download does not contain
+RBManager.jar in the lib directory, but rather in the main directory.  Translators may have a hard time
+getting the program started.</li>
+<li>The existing properties files for your project must be imported into Resource Bundle Manager (it
+can't just open them directly).</li>
+<li>If some keys not been translated to all languages before the import,
+Resource Bundle Manager will not notice this and will claim that all files have been translated.</li>
+<li>Only one line is given for translations.  New lines are removed from multi-line translations.</li>
+<li>When adding a key, Resource Bundle Manager adds the key with the same text to every language
+rather than adding it to the base and letting it inherit.</li>
+<li>Once you edit a translation file Resource Bundle Manager, the program does not support editing
+the file in another editor.  Any additions made by another program will not be noticed unless the
+comments on the properties are also carfully modified.</li>
+<li>The file open dialog does not remember the last directory from which a file was opened.</li>
+</ol>
+</div>
+<%/bte.tpl%>
+<%/bte.doc%>
