@@ -1,10 +1,11 @@
-personal_ws-1.1 en 358
+personal_ws-1.1 en 364
 aboutItem
 aboutMenuItem
 AbstractTableModel
 ActionEvent
 ActionListener
 actionPerformed
+actionsMenu
 addActionListener
 addItemListener
 addKey
@@ -28,6 +29,7 @@ ArrayList
 ascii
 attesoro
 Attesoro's
+AWT
 baseName
 Birthdate
 BorderLayout
@@ -186,6 +188,7 @@ JMenuItem
 JOptionPane
 JPanel
 JPopupMenu
+jrc
 jre
 JScrollPane
 JSplitPane
@@ -229,6 +232,7 @@ newName
 newNode
 newPath
 nextElement
+nextKeyMenuItem
 nextNode
 nextToken
 nodeList
@@ -357,3 +361,5 @@ workingIndex
 workingName
 workingNode
 xfv
+Zaval
+zavel

@@ -66,8 +66,8 @@ all the languages for a single key on one screen,it requires a large amount of s
 to use the AWT graphics libraries rather than the newer Swing libraries.  The look and feel
 is not as good, but it may work with older versions of Java.</p>
 
-<p>Zavel JRC Editor does not appear to care about resource inheritence and will give warnings that a key has
-not been compeletely translated when a translation should inherit from the default.  You can
+<p>Zavel JRC Editor does not appear to care about resource inheritance and will give warnings that a key has
+not been completely translated when a translation should inherit from the default.  You can
 see in the screenshot that English (United States) is the only thing not filled in, and yet there
 is still a warning.</p>
 
