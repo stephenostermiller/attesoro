@@ -24,6 +24,8 @@ name=downloadLinkText %><%/bte.grp %><%bte.grp onNoResolve=ok %>
 <li><%bte.grp onDefault=ok %><%bte.inc 
 name=instructionsLinkText %><%/bte.grp %></li>
 <li><%bte.grp onDefault=ok %><%bte.inc 
+name=hackingLinkText %><%/bte.grp %></li>
+<li><%bte.grp onDefault=ok %><%bte.inc 
 name=licenseLinkText %><%/bte.grp %></li>
 </ul>
 </td></tr></table>
@@ -37,5 +39,6 @@ name=licenseLinkText %><%/bte.grp %></li>
 <%bte.tpl name=screenshotLinkText %><a href="screenshot.html">Screenshots</a><%/bte.tpl%>
 <%bte.tpl name=downloadLinkText %><a href="download.html">Download</a><%/bte.tpl%>
 <%bte.tpl name=instructionsLinkText %><a href="instructions.html">Instructions</a><%/bte.tpl%>
+<%bte.tpl name=hackingLinkText %><a href="modify.html">Hacking</a><%/bte.tpl%>
 <%bte.tpl name=licenseLinkText %><a href="license.html">License</a><%/bte.tpl%>
 <%/bte.doc%>

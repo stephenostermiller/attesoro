@@ -1,0 +1,43 @@
+<%bte.doc super="page.bte"%>
+<%bte.tpl name=pageTitle %>Modifying Attesoro<%/bte.tpl%>
+<%bte.tpl name=description %>Instructions for modifying Attesoro, the open source translation editor.<%/bte.tpl%>
+<%bte.tpl name=keywords %>modify, hack, source, code, program, translate, internationalize, modify<%/bte.tpl%>
+<%bte.tpl name=hackingLinkText %><b>Hacking</b><%/bte.tpl%>
+<%bte.tpl name=pageContent %>
+<h2>Getting the Source</h2>
+<p>The first  step in modifying Attesoro is looking at the sources.  There 
+are two ways to get the source code.  attesoro.jar contains all the source code.
+You can get the source code from the jar file.  Either rename attesoro.jar to
+attesoro.zip (different extensions for the same format) and use your favorite
+zip file extractor, or use the following command line that comes with the
+Java development kit:<br>
+<b>jar&nbsp;xfv&nbsp;attesoro.jar</b><br>
+The second way to get the source code is through CVS.  The source code is 
+checked into the CVS server on the <a href="http://gjt.org/">Giant Java Tree</a>.
+You may <a href="http://www.gjt.org/servlets/JCVSlet/list/gjt/com/Ostermiller/attesoro/">browse 
+the CVS repository</a> or use your favorite CVS client
+to get the source.  Here is the command that will get the source using the
+common command line client:<br>
+<b>cvs&nbsp;-D&nbsp;":pserver:anonymous@cvs.gjt.org:/gjt/cvsroot"&nbsp;login</b><br>
+use password "guest"<br>
+<b>cvs&nbsp;-D&nbsp;":pserver:anonymous@cvs.gjt.org:/gjt/cvsroot"&nbsp;checkout&nbsp;java/com/Ostermiller</b><br>
+<p>
+You will find the source code in the com/Ostermiller/attesoro directory.  Attesoro
+also uses some source code from the com/Ostermiller/util directory.
+
+<h2>Translating</h2>
+Attesoro itself can be localized.  The properties file to translate is com/Ostermiller/attesoro/Editor.properties.
+It is currently only English.  You may use Attesoro to translate itself if you desire.
+
+<h2>Compiling</h2>
+Attesoro comes with a make file that will compile everything.  Usually you can
+go to the com/Ostermiller/attesoro directory and type "make".  If that doesn't
+work, or if you do not have make, you can compile the java files from that
+directory with:<br>
+<b>javac&nbsp;-classpath&nbsp;../../..&nbsp;*.java</b><br>
+You can either build the jar file using "make" or "jar", or you may run Attesoro
+when it is not in a jar file:<br>
+<b>java&nbsp;-classpath&nbsp;../../..&nbsp;com.Ostermiller.attesoro.Editor</b><br>
+
+<%/bte.tpl%>
+<%/bte.doc%>

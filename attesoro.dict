@@ -1,4 +1,4 @@
-personal_ws-1.1 english 303
+personal_ws-1.1 english 304
 aboutItem
 aboutMenuItem
 AbstractTableModel
@@ -38,6 +38,7 @@ countryBox
 countryNode
 createTreeNode
 currentYPos
+CVS
 defaultCommentArea
 defaultCommentLabel
 defaultFile
@@ -225,7 +226,6 @@ saveTextAreas
 saveTranslation
 screenLocation
 screenshot
-Screenshot
 Screenshots
 screenSize
 scrollPathToVisible
@@ -289,6 +289,7 @@ useDefault
 useDefaultComment
 useDefaultText
 userFile
+util
 valueChanged
 variantBox
 variantNode

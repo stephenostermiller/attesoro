@@ -43,7 +43,19 @@ to be translated, translators may have a hard time figuring out which strings
 have not been translated yet.</td>
 
 <td>Attesoro shows a list of all translatable strings
-and displays the ones that have not yet been translated in a different color.</td></tr>
+and displays the ones that have not yet been translated in blue.</td></tr>
+
+<tr><td>If a programmer decides that they would like to change the name of a 
+translation key, they have to change it in a file for every language.</td>
+
+<td>Attesoro lets you change the name of the key once and saves the changes
+in the file for each language.</td></tr>
+
+<tr><td>When translating in a text editor, have no choice but to accept all
+or none of your changes when you save the file.</td>
+
+<td>Attesoro displays keys with changed translations in green and allows you
+to revert individual keys.</td></tr>
 </table>
 <%/bte.tpl%>
 <%/bte.doc%>
