@@ -12,11 +12,11 @@ a non ISO-8859-1 language such as Polish or Chinese.</p>
 
 <h2>Name</h2>
 <p>Attesoro is named after the Rosetta stone.  This famous stone had the same writing in three
-languages and helped modern scientist decode Egyptian hyroglyphics.  Attesoro is "O' Rosetta" backwards and
+languages and helped modern scientist decode Egyptian hieroglyphics.  Attesoro is "O' Rosetta" backwards and
 Italian it roughly translates to "A Treasure".</p>
 
 <h2>Contributors</h2>
-<p>Several other people have contributed to Attesoro.  Thank you to Carlo Magnaghi for fixing bugs
+<p>Several helpful people have contributed to Attesoro.  Thank you to Carlo Magnaghi for fixing bugs
 and writing documentation.  Also thank you to Wojciech Sobczuk for bug reports.</p>
 <%/bte.tpl%>
 <%/bte.doc%>
