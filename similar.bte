@@ -1,7 +1,7 @@
 <%bte.doc super="page.bte"%>
 <%bte.tpl name=pageTitle %>Software Similar to Attesoro<%/bte.tpl%>
 <%bte.tpl name=description %>A list of programs besides Attesoro that manage Java resource bundles and translations.<%/bte.tpl%>
-<%bte.tpl name=keywords %>similar, programs, software, Resource Bundle Manager, resource, bundle, manager, ibm, icu, translation, translations, attesoro<%/bte.tpl%>
+<%bte.tpl name=keywords %>similar to attesoro, resource bundle manager, translation managers, babel fish, zavel jrc editor,  <%/bte.tpl%>
 <%bte.tpl name=similarLinkText %><b>Similar Programs</b><%/bte.tpl%>
 <%bte.tpl name=pageContent %>
 <div class=odd>
@@ -36,6 +36,7 @@ comments on the properties are also carefully modified.</li>
 address of the author, but the email to that address bounces.</li>
 </ol>
 </div>
+
 <div class=even>
 <a href="http://www.solyp.com/2975.html">Babel Fish - Language Resource Editor by SOLYP Informatik GmbH</a> (website in German)<br>
 <img alt="Babel Fish screenshot" vspace=10 hspace=10 width=548 height=886 src="http://ostermiller.org/attesoro/babelfish.png"><br>
@@ -45,10 +46,44 @@ License: Freeware, no commercial distribution, (closed source) - see license fil
 at once, it shows all the translations for all languages on the screen at one time.  However, that
 configuration will get unwieldy as the number of translated languages grows.</p>
 
-<p>Like <B style="color:black;background-color:#ffff66">Attesoro</B>, it is written in Java.  The flags for each language give the application an
+<p>Like Attesoro, it is written in Java.  The flags for each language give the application an
 attractive look and feel.</p>
-<p>It does however, have one significant disadvantage to <B style="color:black;background-color:#ffff66">Attesoro</B>: Comments are not maintained in
-the properties file.  They are all removed whenever the translation is saved.
+
+<p>It does however, have one significant disadvantage to Attesoro: Comments are not maintained in
+the properties file.  They are all removed whenever the translation is saved.</p>
+</div>
+
+<div class=odd>
+<a href="http://www.zaval.org/products/jrc-editor/"> Zaval Java Resource Editor (JRC-Editor) by The Zaval CE Group</a><br>
+<img alt="Zaval JRC Editor screenshot" vspace=10 hspace=10 width=959 height=687 src="zaval_jrc_editor.png"><br>
+Download: <a href="http://www.zaval.org/products/jrc-editor/download/">Available in multilpe formats (zip, exe, rpm, tar.gz) with scripts to run on a variety of platforms</a><br>
+License: Open source - GNU General Public License</a>
+<p>Like Babel Fish, Zaval JRC Editor appear to be written for translators that are targeting two or more languages
+at once, it shows all the translations for all languages on the screen at one time.  Because it puts
+all the languages for a single key on one screen,it requires a large amount of screen space.</p>
+
+<p>Like Attesoro, it is written in Java.  It appears
+to use the AWT graphics libraries rather than the newer Swing libraries.  The look and feel
+is not as good, but it may work with older versions of Java.</p>
+
+<p>Zavel JRC Editor does not appear to care about resource inheritence and will give warnings that a key has
+not been compeletely translated when a translation should inherit from the default.  You can
+see in the screenshot that English (United States) is the only thing not filled in, and yet there
+is still a warning.</p>
+
+<p>When saving properties files it does appear to preserve some comments, however they may not be in
+same place they used to be.  It also inserts a comment saying that the file was modified by the Zaval
+JRC Editor.</p>
+
+<p>When trying to open a large file (with version 2.0 of the editor) I got the following exception:
+<pre>java.lang.ArrayIndexOutOfBoundsException: 0 >= 0
+    at java.util.Vector.elementAt(Vector.java:431)
+    at org.zaval.tools.i18n.translator.BundleSet.getItem(BundleSet.java:115)
+    at org.zaval.tools.i18n.translator.Translator.initData(Translator.java:1687)
+    at org.zaval.tools.i18n.translator.Translator.access$700(Translator.java:58)
+    at org.zaval.tools.i18n.translator.Translator$Loader.run(Translator.java:1404)
+    at java.lang.Thread.run(Thread.java:534)</pre></p>
+
 </div>
 <%/bte.tpl%>
 <%/bte.doc%>
