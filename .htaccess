@@ -1,1 +1,2 @@
 AddType application/octet-stream jar
+AddType application/octet-stream application/vnd.sun.xml.writer
