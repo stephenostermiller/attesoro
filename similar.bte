@@ -10,7 +10,7 @@
 Download: <a href="http://oss.software.ibm.com/icu4j/demo_tools/RBManager.html">Resource Bundle Manager download page</a><br>
 License: <a href="http://oss.software.ibm.com/cvs/icu/~checkout~/icu/license.html">Open Source - ICU License 1.8.1</a>
 <p>Resource Bundle Manager is a capable program with some features not available in Attesoro.
-It puts comments on all translated items that include metadata such as who did the translation and when
+It puts comments on all translated items that include meta data such as who did the translation and when
 the translation was done.  It can create groups for items to be translated.  It also has a nice search feature and it can show statistics including
 number of untranslated items for each language.</p>
 <p>Like Attesoro, it is written in Java.  It has
@@ -23,15 +23,17 @@ RBManager.jar in the lib directory, but rather in the main directory.  Translato
 getting the program started.</li>
 <li>The existing properties files for your project must be imported into Resource Bundle Manager (it
 can't just open them directly).</li>
-<li>If some keys not been translated to all languages before the import,
+<li>If some keys have not been translated to all languages before the import,
 Resource Bundle Manager will not notice this and will claim that all files have been translated.</li>
 <li>Only one line is given for translations.  New lines are removed from multi-line translations.</li>
 <li>When adding a key, Resource Bundle Manager adds the key with the same text to every language
 rather than adding it to the base and letting it inherit.</li>
 <li>Once you edit a translation file Resource Bundle Manager, the program does not support editing
 the file in another editor.  Any additions made by another program will not be noticed unless the
-comments on the properties are also carfully modified.</li>
+comments on the properties are also carefully modified.</li>
 <li>The file open dialog does not remember the last directory from which a file was opened.</li>
+<li>The software does not appear to be actively maintained.  The documentation contains an email
+address of the author, but the email to that address bounces.</li>
 </ol>
 </div>
 <%/bte.tpl%>

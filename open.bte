@@ -1,7 +1,7 @@
 <%bte.doc super="page.bte"%>
 <%bte.tpl name=pageTitle %>Attesoro Instructions - Opening Files<%/bte.tpl%>
 <%bte.tpl name=description %>Instructions for opening files to translate with Attesoro - the Java translation editor.<%/bte.tpl%>
-<%bte.tpl name=keywords %>run, run, start, starting, startup, lauch, execute, jar, executable, exe, exec, attesoro, editor, translation, java<%/bte.tpl%>
+<%bte.tpl name=keywords %>run, run, start, starting, startup, launch, execute, jar, executable, exe, exec, attesoro, editor, translation, java<%/bte.tpl%>
 <%bte.tpl name=openLinkText %><b>Open Files</b><%/bte.tpl%>
 <%bte.tpl name=pageContent %>
 

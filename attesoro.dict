@@ -1,4 +1,4 @@
-personal_ws-1.1 english 315
+personal_ws-1.1 en 349
 aboutItem
 aboutMenuItem
 AbstractTableModel
@@ -20,14 +20,20 @@ addremove
 addTreeSelectionListener
 addWindowListener
 alreadyTranslatedFileMatcher
+anoncvs
 args
 ArrayList
 ascii
 attesoro
 Attesoro's
 baseName
+Birthdate
 BorderLayout
+br
+bte
 changedUpdate
+changelog
+Changelog
 charAt
 ClassLoader
 clearSelection
@@ -41,6 +47,8 @@ countryBox
 countryNode
 createTreeNode
 CTRL
+currentProperties
+currentProps
 currentYPos
 CVS
 defaultCommentArea
@@ -58,10 +66,13 @@ deleteKeyConfirm
 deleteKeyMenuItem
 deleteKeyPopupMenuItem
 depthFirstEnumeration
+di
 DocumentEvent
 DocumentListener
 editingSplitPane
 editMenu
+Euro
+exe
 exitRoutine
 expandPath
 FileFilter
@@ -70,6 +81,10 @@ fileMenu
 FileOutputStream
 fillNameData
 finalBaseName
+findActionListener
+findAgain
+findMenuItem
+FindOptions
 fullNames
 getAbsoluteFile
 getColumnCount
@@ -95,6 +110,7 @@ getMinSelectionIndex
 getModifiers
 getName
 getNames
+getNextLocalesProperties
 getParent
 getParentFile
 getPreferredSize
@@ -116,13 +132,17 @@ getX
 getY
 gif
 globalModified
+gotToFind
 gpl
 GridLayout
 hasFocus
 hasMoreElements
 hasMoreTokens
 helpMenu
+ibm
+icu
 ImageIcon
+img
 indexOf
 ini
 init
@@ -148,6 +168,7 @@ isSelectionEmpty
 isTop
 isUpper
 isVisible
+java
 JCheckBox
 JComboBox
 JFileChooser
@@ -173,6 +194,7 @@ keyTyped
 langMenu
 languageBox
 languageNode
+lastFind
 layoutContainer
 LayoutManager
 listFiles
@@ -183,6 +205,7 @@ loadMenuItem
 localeData
 LocaleElement
 lsm
+Magnaghi
 menuBar
 MessageFormat
 minimumLayoutSize
@@ -191,6 +214,7 @@ MouseAdapter
 MouseEvent
 mousePressed
 mre
+nascita
 navigationSplitPane
 newLocalePanel
 newName
@@ -212,6 +236,8 @@ popupSize
 preferredLayoutSize
 preferredSize
 propertyNames
+rb
+RBManager
 removeAllChildren
 removeLayoutComponent
 removeUpdate
@@ -220,6 +246,7 @@ renameKeyActionListener
 renameKeyMenuItem
 renameKeyPopupMenuItem
 ResourceBundle
+returnNext
 retval
 revalidate
 revertKeyActionListener
@@ -269,18 +296,23 @@ showMessageDialog
 showOpenDialog
 showOptionDialog
 showPopUpSmart
+Sobczuk
 someModified
 splitpaneLocation
+startProperties
 startsWith
 StringHelper
 stringsEqual
 StringTokenizer
 tableModel
 tablePopup
+td
 tempNode
 textSplitPane
 toArray
+toFind
 toString
+tpl
 transFiles
 translationArea
 TranslationData
@@ -293,6 +325,7 @@ TreePath
 treePopup
 TreeSelectionEvent
 TreeSelectionListener
+TulipChain
 TXT
 UberProperties
 useDefault
@@ -310,6 +343,7 @@ websiteMenuItem
 WindowAdapter
 windowClosing
 WindowEvent
+Wojciech
 workingIndex
 workingName
 workingNode

@@ -26,15 +26,15 @@ In this example "Birthdate:" has been translated to "Data di nascita:".</li>
 </ol>
 
 <table border=0><tr><td width='30%'>
-Selecting a languge and a key, then translating the text.
+Selecting a language and a key, then translating the text.
 </td><td width="70%">
-<img src="http://ostermiller.org/attesoro/translate.png" width=561 height=391 alt="Selecting a languge and a key, then translating the text.">
+<img src="http://ostermiller.org/attesoro/translate.png" width=561 height=391 alt="Selecting a language and a key, then translating the text.">
 </td></tr></table>
 
 <h2>Comments</h2>
 Comments do not appear in the running Java application.  Comments may 
 contain instructions about where in a program the text is used, or how
-it should be translated.  Unless instructed otherwise, it is not neccessary to
+it should be translated.  Unless instructed otherwise, it is not necessary to
 translate comments.
 
 <%/bte.tpl%>

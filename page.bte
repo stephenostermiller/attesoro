@@ -54,7 +54,7 @@ name=similarLinkText %><%/bte.grp %></div>
 
 <div class=newsItem>
 If you are using Attesoro to do some translation, please translate Attesoro 
-itself as well.  Transate 
+itself as well.  Translate 
 <a href="http://www.gjt.org/servlets/JCVSlet/show/gjt/com/Ostermiller/attesoro/Editor.properties/HEAD">Editor.properties</a>
 and send the translated file to Stephen. Existing locales:
 <ul>
