@@ -76,3 +76,7 @@ p.even, p.odd, p.evenodd, li.even, li.odd, li.evenodd {
   padding:.3cm .1cm .3cm .1cm;
   -moz-border-radius:3px;
 }
+.newsItem {
+  font-size:smaller;
+  margin-top:1.5cm;
+}

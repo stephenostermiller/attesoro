@@ -26,7 +26,7 @@ You will find the source code in the com/Ostermiller/attesoro directory.  Atteso
 also uses some source code from the com/Ostermiller/util directory.
 
 <h2>Translating</h2>
-Attesoro itself can be localized.  The properties file to translate is com/Ostermiller/attesoro/Editor.properties.
+Attesoro itself can be localized.  The properties file to translate is <a href="http://www.gjt.org/servlets/JCVSlet/show/gjt/com/Ostermiller/attesoro/Editor.properties/HEAD">com/Ostermiller/attesoro/Editor.properties</a>.
 It is currently only English.  You may use Attesoro to translate itself if you desire.  Once Attesoro
 has been translated please send the translation to Stephen so that he can include it in the next release.
 

@@ -47,6 +47,16 @@ name=hackingLinkText %><%/bte.grp %></li>
 name=licenseLinkText %><%/bte.grp %></li>
 </ul>
 </div>
+
+<div class=newsItem>
+If you are using Attesoro to do some translation, please translate Attesoro 
+itself as well.  Transate 
+<a href="http://www.gjt.org/servlets/JCVSlet/show/gjt/com/Ostermiller/attesoro/Editor.properties/HEAD">Editor.properties</a>
+and send the translated file to Stephen. Existing locales:
+<ul>
+<li>English</li>
+</ul>
+</div>
 </td>
 <td class=pagecontent>
 <h1 align=center><a name="content"><%bte.inc name=pageTitle %></a></h1>
