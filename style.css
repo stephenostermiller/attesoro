@@ -76,7 +76,7 @@ a.mail {
   padding:.3cm;
   -moz-border-radius:3px;
 }
-p.even, p.odd, p.evenodd, li.even, li.odd, li.evenodd, div.even, div.odd {
+p.even, p.odd, p.evenodd, li.even, li.odd, li.evenodd, div.even, div.odd, table.even, table.odd {
   margin:0;
   padding:.3cm .1cm .3cm .1cm;
   -moz-border-radius:3px;

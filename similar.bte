@@ -2,11 +2,11 @@
 <%bte.tpl name=pageTitle %>Software Similar to Attesoro<%/bte.tpl%>
 <%bte.tpl name=description %>A list of programs besides Attesoro that manage Java resource bundles and translations.<%/bte.tpl%>
 <%bte.tpl name=keywords %>similar, programs, software, Resource Bundle Manager, resource, bundle, manager, ibm, icu, translation, translations, attesoro<%/bte.tpl%>
-<%bte.tpl name=usersLinkText %><b>Users</b><%/bte.tpl%>
+<%bte.tpl name=similarLinkText %><b>Similar Programs</b><%/bte.tpl%>
 <%bte.tpl name=pageContent %>
 <div class=odd>
 <a href="http://oss.software.ibm.com/cvs/icu4j/~checkout~/unicodetools/com/ibm/rbm/docs/index.html">IBM's Resource Bundle Manager written by Jared Jackson</a><br>
-<img alt="Resource Bundle Manager screenshot" width=662 height=368 src="http://ostermiller.org/attesoro/resourcemanager.png"><br>
+<img alt="Resource Bundle Manager screenshot" vspace=10 hspace=10 width=662 height=368 src="http://ostermiller.org/attesoro/resourcemanager.png"><br>
 Download: <a href="http://oss.software.ibm.com/icu4j/demo_tools/RBManager.html">Resource Bundle Manager download page</a><br>
 License: <a href="http://oss.software.ibm.com/cvs/icu/~checkout~/icu/license.html">Open Source - ICU License 1.8.1</a>
 <p>Resource Bundle Manager is a capable program with some features not available in Attesoro.
