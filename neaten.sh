@@ -26,6 +26,6 @@ do
 done
 if [ "$tablist" != "" ]
 then
-	java -classpath ../../.. com.Ostermiller.util.Tabs -gtv $tablist
+	java -classpath ../../.. com.Ostermiller.util.Tabs -w 4 -tv $tablist
 fi
 
