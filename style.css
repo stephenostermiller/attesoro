@@ -88,3 +88,7 @@ table.even, table.odd {
   font-size:smaller;
   margin-top:1.5cm;
 }
+div.sitenav {
+    text-align:right;
+    font-size:smaller;
+}

@@ -42,3 +42,7 @@ p.even, p.odd {
   -moz-border-radius:3px;
   border:thin black ridge;
 }
+div.sitenav {
+    text-align:right;
+    font-size:smaller;
+}
