@@ -17,6 +17,8 @@
 <li><%bte.grp onDefault=ok %><%bte.inc 
 name=homeLinkText %><%/bte.grp %></li>
 <li><%bte.grp onDefault=ok %><%bte.inc 
+name=screenshotLinkText %><%/bte.grp %></li>
+<li><%bte.grp onDefault=ok %><%bte.inc 
 name=downloadLinkText %><%/bte.grp %><%bte.grp onNoResolve=ok %>
 <%bte.inc name=downloadLinks %><%/bte.grp %></li>
 <li><%bte.grp onDefault=ok %><%bte.inc 
@@ -28,10 +30,11 @@ name=licenseLinkText %><%/bte.grp %></li>
 <h1 align=center><a name="content"><%bte.inc name=pageTitle %></a></h1>
 <div class=content><%bte.inc name=pageContent %></div>
 <br clear=all>
-<div class=copyright><p>Copyright &copy; 2002 <a href="http://ostermiller.org/contact.pl?regarding=Attesoro" class=mail>Stephen Ostermiller</a></p></div>
+<div class=copyright><p>Copyright &copy; 2002-2003 <a href="http://ostermiller.org/contact.pl?regarding=Attesoro" class=mail>Stephen Ostermiller</a></p></div>
 </body>
 </html><%/bte.tpl%>
 <%bte.tpl name=homeLinkText %><a href="./">Overview</a><%/bte.tpl%>
+<%bte.tpl name=screenshotLinkText %><a href="screenshot.html">Screenshots</a><%/bte.tpl%>
 <%bte.tpl name=downloadLinkText %><a href="download.html">Download</a><%/bte.tpl%>
 <%bte.tpl name=instructionsLinkText %><a href="instructions.html">Instructions</a><%/bte.tpl%>
 <%bte.tpl name=licenseLinkText %><a href="license.html">License</a><%/bte.tpl%>

@@ -1,0 +1,10 @@
+<%bte.doc super="page.bte"%>
+<%bte.tpl name=pageTitle %>Attesoro Screenshots<%/bte.tpl%>
+<%bte.tpl name=description %>Screenshot of a free, open source, translation editor for Java programs.<%/bte.tpl%>
+<%bte.tpl name=keywords %>attesoro, translate, translation, i18n, internationalization, editor, properties, java<%/bte.tpl%>
+<%bte.tpl name=screenshotLinkText %><b>Screenshots</b><%/bte.tpl%>
+<%bte.tpl name=pageContent %>
+A translator is busy translating <a href="http://ostermiller.org/tulipchain/">Tulip Chain</a> into Danish.
+<img vspace=10 hspace=10 alt="Attesoro screenshot showing Danish translation of English strings." src="screenshot.png">
+<%/bte.tpl%>
+<%/bte.doc%>

@@ -1,4 +1,4 @@
-personal_ws-1.1 english 299
+personal_ws-1.1 english 303
 aboutItem
 aboutMenuItem
 AbstractTableModel
@@ -21,6 +21,7 @@ addWindowListener
 args
 ArrayList
 attesoro
+Attesoro's
 baseName
 BorderLayout
 changedUpdate
@@ -223,6 +224,9 @@ saveProps
 saveTextAreas
 saveTranslation
 screenLocation
+screenshot
+Screenshot
+Screenshots
 screenSize
 scrollPathToVisible
 se

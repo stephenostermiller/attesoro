@@ -10,28 +10,40 @@
 <a href="http://java.sun.com/j2se/1.4/docs/api/java/util/ResourceBundle.html">resource 
 bundles</a> and keep their translatable Strings in 
 <a href="http://java.sun.com/j2se/1.4/docs/api/java/util/Properties.html">properties 
-files.</a>. (See Sun's Java Tutorial on 
+files</a>. (See Sun's Java Tutorial on 
 <a href="http://java.sun.com/docs/books/tutorial/i18n/">i18n</a>.)  Unfortunately,
 properties files are hard to edit for translators.</p>
 
-<p> Properties files are stored in
+<table border=1 summary="Problems with Java internationalization showing how Attesoro can help." cellpadding=3>
+
+<tr><th width="65%">Java Internationalization Problem</th>
+
+<th width="35%">Attesoro's Solution</th></tr>
+
+<tr><td>Properties files are stored in
 the ISO 8859-1 character encoding which does not support many international 
 characters.  International characters have to be escaped with \u0000 style
-escape sequences.  Sun recommends a command line too to convert a document
+escape sequences.  Sun recommends a command line tool to convert a document
 from a character set to ISO 8859-1 with escape sequences.  Most translators
-find this confusing.  A translator can enter international characters directly
+find this confusing.</td>
+
+<td>A translator can enter international characters directly
 into Attesoro and Attesoro will save the file in the correct format with escape
-sequences.</p>
+sequences.</td></tr>
 
-<p>Each language is stored in a separate properties file.  This makes life
+<tr><td>Each language is stored in a separate properties file.  This makes life
 difficult for the translator because s/he must constantly swap back and forth
-between files when translating.  Attesoro shows the untranslated text directly
-above the area in which the translated text should be typed.</p>
+between the file in the original language and the translated file.</td>
 
-<p>When the programmers expand the program and add new strings that need
+<td>Attesoro shows the untranslated text directly
+above the area in which the translated text should be typed.</td></tr>
+
+<tr><td>When the programmers expand the program and add new strings that need
 to be translated, translators may have a hard time figuring out which strings
-have not been translated yet.  Attesoro shows a list of all translatable strings
-and displays the ones that have not yet been translated in a different color.</p>
+have not been translated yet.</td>
 
+<td>Attesoro shows a list of all translatable strings
+and displays the ones that have not yet been translated in a different color.</td></tr>
+</table>
 <%/bte.tpl%>
 <%/bte.doc%>
