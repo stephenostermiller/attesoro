@@ -2,12 +2,12 @@
 
 size=`ls -lah attesoro.jar`
 size=${size:38:4}
-if [ -z "`grep $size download.bte`" ]
+if [ -z "`grep -i $size download.bte`" ]
 then
     echo "attesoro.jar size is $size but download.bte does not show that."
     exit 1
 fi
-if [ -z "`grep $size download.html`" ]
+if [ -z "`grep -i $size download.html`" ]
 then
     echo "attesoro.jar size is $size but download.html does not show that."
     exit 1
