@@ -28,7 +28,7 @@ name=licenseLinkText %><%/bte.grp %></li>
 <h1 align=center><a name="content"><%bte.inc name=pageTitle %></a></h1>
 <div class=content><%bte.inc name=pageContent %></div>
 <br clear=all>
-<div class=copyright><p>Copyright &copy; 2002 <a href="mailto:attesoro@ostermiller.com" class=mail>Stephen Ostermiller</a></p></div>
+<div class=copyright><p>Copyright &copy; 2002 <a href="http://ostermiller.org/contact.pl?regarding=Attesoro" class=mail>Stephen Ostermiller</a></p></div>
 </body>
 </html><%/bte.tpl%>
 <%bte.tpl name=homeLinkText %><a href="./">Overview</a><%/bte.tpl%>

@@ -1,7 +1,8 @@
 /*
  * Translation editor for Java properties files.
  *
- * Copyright (c) 2002 by Stephen Ostermiller (translation@ostermiller.com)
+ * Copyright (c) 2002 by Stephen Ostermiller
+ * http://ostermiller.org/contact.pl?regarding=Attesoro
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU Library General Public License as published
@@ -895,7 +896,7 @@ public class Editor {
 						labels.getString("about_message"),
 						new Object[] {
 							version,
-							"2002 Stephen Ostermiller <attesoro@ostermiller.com>"
+							"2002 Stephen Ostermiller http://ostermiller.org/contact.pl?regarding=Attesoro"
 						}
 					),
 					labels.getString("about_title"),
