@@ -1,0 +1,27 @@
+<%bte.doc super="page.bte"%>
+<%bte.tpl name=pageTitle %>Attesoro Instructions<%/bte.tpl%>
+<%bte.tpl name=description %>Instructions for installing and using Attesoro.<%/bte.tpl%>
+<%bte.tpl name=keywords %>instructions, instructions, attesoro, editor, translation, java<%/bte.tpl%>
+<%bte.tpl name=instructionsLinkText %><b>Instructions</b><%/bte.tpl%>
+<%bte.tpl name=pageContent %>
+<p>All you need to do is double click the jar file to start Attesoro.  
+Some systems may not support executable jar files correctly.  
+If double clicking on the jar file does not work, try the following 
+command lines:<br>
+<line><b>java&nbsp;-jar&nbsp;attesoro.jar</b></line><br>
+<line><b>java&nbsp;-classpath&nbsp;attesoro.jar&nbsp;com.Ostermiller.attesoro.Editor</b></line></p>
+
+<p>To use Attesoro you need to be able to open a file to translate.
+Since most programs come in a jar file, you may need to extract the jar file
+to find the translatable files.  Jar files are the same as zip files so you
+can rename the jar file to a zip file and then use any unzip program to extract
+the contents.  Alternately you can use the jar tool that comes with Java.  It
+accepts a command line something like this:<br>
+<line><b>jar&nbsp;xfv&nbsp;file.jar</b></line><br>
+Translation files have the extension ".properties".</p>
+
+<p>Once you have a file to translate it you can open it from the File --> Open
+menu of Attesoro.  You can also specify the translation file on the command line
+when you start Attesoro.</p>
+<%/bte.tpl%>
+<%/bte.doc%>

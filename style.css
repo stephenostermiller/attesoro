@@ -1,0 +1,25 @@
+body { 
+  color:black;
+  background-color:white;  
+}
+ul.sidebar {
+  margin-left:0;
+  padding-left:10px;
+  padding-right:10px;
+  margin-right:0;
+}
+ul.sidebar li {
+  padding-bottom:4px;
+  margin-left:1cm;
+  padding-left:0cm;
+}
+ul#elementDescriptions {
+  list-style:none;
+}
+table.sidebar {
+  border-left:thin black ridge;
+  border-bottom:thin black ridge;
+}
+a.mail {
+  font-style:italic;
+}
