@@ -38,7 +38,7 @@ import com.Ostermiller.util.Browser;
 
 public class Editor {
 
-	private static String version = "1.1";
+	private static String version = "1.2";
 	private static ResourceBundle labels = ResourceBundle.getBundle("com.Ostermiller.attesoro.Editor",  Locale.getDefault());
 	private static UberProperties props = new UberProperties();
 	private static String[] userFile = new String[] {".java", "com","Ostermiller","attesoro","Editor.ini"};
