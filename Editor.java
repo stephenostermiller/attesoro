@@ -928,7 +928,7 @@ public class Editor {
 		nextKeyMenuItem.getAccessibleContext().setAccessibleDescription(labels.getString("next_key_menu_description"));
 		nextKeyMenuItem.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
-				if (workingIndex < names.size()){
+				if (workingIndex+1 < names.size()){
 					workingIndex++;
 					table.getSelectionModel().setSelectionInterval(workingIndex,workingIndex);
 					workingName = getName(workingIndex).name;
