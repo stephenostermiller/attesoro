@@ -5,6 +5,12 @@
 <%bte.tpl name=pageContent %>
 <h3>Version History</h3>
 
+<h4>Version 1.6</h4>
+<ul>
+<li>French translation</li>
+<li>Italian translation</li>
+<li>A new "Actions" menu with a "Next Key" menu item</li>
+</ul>
 
 <h4>Version 1.5</h4>
 Many thanks to <a href="http://www.wie-virtuell.de/attesoro/">Gerhard Leibrock</a> 

@@ -8,13 +8,13 @@
 and install the Java2 Runtime Environment version 1.4 or later (J2SE JRE) from java.sun.com 
 if you do not already have it installed.</p>
 
-<p class=even><big><b><a href="attesoro_1_5.jar">Download</a></b></big> the latest version (Version 1.4) of Attesoro 
-(Executable Jar - 197k)</p>
+<p class=even><big><b><a href="attesoro_1_6.jar">Download</a></b></big> the latest version (Version 1.4) of Attesoro 
+(Executable Jar - 214k)</p>
 
 <p>
+Version 1.6 -Italian and French translations, a new actions menu with a "next key" menu item.<br>
 Version 1.5 - From <a href="http://www.wie-virtuell.de/attesoro/">Gerhard Leibrock</a>: Better variant handling, crash fix.<br>
 Version 1.4 - Portuguese translation, several fixes for reading properties files correctly.<br>
-Version 1.3 - crash fix, menu accelerators.<br>
 <a href="history.html">Complete change history</a><br>
 </p>
 <%/bte.tpl%>
