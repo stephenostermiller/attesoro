@@ -4,7 +4,42 @@
 <%bte.tpl name=keywords %>attesoro, translate, translation, i18n, internationalization, editor, properties, java<%/bte.tpl%>
 <%bte.tpl name=screenshotLinkText %><b>Screenshots</b><%/bte.tpl%>
 <%bte.tpl name=pageContent %>
+
+<table><tr><td>
 A translator is busy translating <a href="http://ostermiller.org/tulipchain/">Tulip Chain</a> into Danish.
-<img vspace=10 hspace=10 alt="Attesoro screenshot showing Danish translation of English strings." src="screenshot.png">
+</td><td>
+<img vspace=10 hspace=10 alt="Attesoro screenshot showing Danish translation of English strings." src="screenshot.png" width=483 height=322>
+</td></tr></table>
+
+<table><tr><td>
+Attesoro as it looks when it is first run, before any files are open.
+</td><td>
+<img src="http://ostermiller.org/attesoro/blank.png" width=561 height=391 alt="Attesoro as it looks when it is first run, before any files are open.">
+</td></tr></table>
+
+<table><tr><td>
+Attesoro open file dialog
+</td><td>
+<img src="http://ostermiller.org/attesoro/opendialog.png" width=512 height=350 alt="Attesoro open file dialog.">
+</td></tr></table>
+
+<table><tr><td>
+Attesoro after opening access_rb.properties.
+</td><td>
+<img src="http://ostermiller.org/attesoro/open.png" width=561 height=391 alt="Attesoro after opening access_rb.properties.">
+</td></tr></table>
+
+<table><tr><td>
+Attesoro locale creation dialog.
+</td><td>
+<img src="http://ostermiller.org/attesoro/create.png" width=268 height=232 alt="Attesoro locale creation dialog.">
+</td></tr></table>
+
+<table><tr><td>
+Selecting a languge and a key, then translating the text.
+</td><td>
+<img src="http://ostermiller.org/attesoro/translate.png" width=561 height=391 alt="Selecting a languge and a key, then translating the text.">
+</td></tr></table>
+
 <%/bte.tpl%>
 <%/bte.doc%>

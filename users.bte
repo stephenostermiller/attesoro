@@ -5,9 +5,9 @@
 <%bte.tpl name=usersLinkText %><b>Users</b><%/bte.tpl%>
 <%bte.tpl name=pageContent %>
 <ul class=userList>
-<li class=odd><a href="/tulipchain/">Tulip Chain</a> - A link checker and editor for the Open Directory Project that has been translated into many languages for international editors.</li>
-<li class=even><a href="http://largorecipes.sourceforge.net/">LargoRecipes</a> - Recipe manager that can import, store, and publish your favorite dishes.</li>
-<li class=odd><a href="http://ganttproject.sourceforge.net">GanttProject</a> - Project management software.</li>
+<li class=odd><a href="/tulipchain/">Tulip Chain</a> - A link checker and editor for the Open Directory Project that has been translated into many languages for international editors. [Open Source - GPL]</li>
+<li class=even><a href="http://largorecipes.sourceforge.net/">LargoRecipes</a> - Recipe manager that can import, store, and publish your favorite dishes. [Open Source - GPL]</li>
+<li class=odd><a href="http://ganttproject.sourceforge.net">GanttProject</a> - Project management software. [Open Source - GPL]</li>
 </ul>
 
 If you have used Attesoro for your project, and you would like to let others know how it helped, 
