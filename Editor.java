@@ -119,11 +119,20 @@ public class Editor {
 			UberProperties p = ((TranslationData)(((DefaultMutableTreeNode)nodeList.nextElement()).getUserObject())).properties;
 			p.setProperty(name, null);
 		}
+		workingName = null;
 		names.remove(workingIndex);
-		table.clearSelection();
+		if (workingIndex >= names.size()){
+			workingIndex--;
+		}
+		if (workingIndex != -1){
+			table.setRowSelectionInterval(workingIndex, workingIndex);
+			workingName = getName(workingIndex).name;
+		}
+		setTextAreas();
 		table.revalidate();
 		table.repaint(table.getBounds());
 		globalModified = true;
+
 	}
 
 	private void saveTextAreas(){
@@ -689,6 +698,13 @@ public class Editor {
 				}
 			}
 		});
+		table.addKeyListener(new KeyAdapter() {
+			public void keyReleased(KeyEvent e){
+				if (e.getKeyCode() == KeyEvent.VK_DELETE){
+					deleteKeyConfirm();
+				}
+			}
+		});
 		table.setDefaultRenderer(Object.class, new DefaultTableCellRenderer(){
 			public Component getTableCellRendererComponent(
 					JTable table, Object value, boolean isSelected,
@@ -780,6 +796,7 @@ public class Editor {
 		JMenuItem loadMenuItem = new JMenuItem(Editor.labels.getString("load_menu_name"));
 		loadMenuItem.setMnemonic(labels.getString("load_menu_key").charAt(0));
 		loadMenuItem.getAccessibleContext().setAccessibleDescription(labels.getString("load_menu_description"));
+		loadMenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_O, ActionEvent.CTRL_MASK));
 		loadMenuItem.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
 				JFileChooser chooser = new JFileChooser(props.getProperty("open_directory", System.getProperty("user.home")));
@@ -816,6 +833,7 @@ public class Editor {
 		fileMenu.add(loadMenuItem);
 		saveMenuItem = new JMenuItem(Editor.labels.getString("save_menu_name"));
 		saveMenuItem.setMnemonic(labels.getString("save_menu_key").charAt(0));
+		saveMenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, ActionEvent.CTRL_MASK));
 		saveMenuItem.getAccessibleContext().setAccessibleDescription(labels.getString("save_menu_description"));
 		saveMenuItem.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
@@ -848,6 +866,7 @@ public class Editor {
 		keyMenu.add(revertKeyMenuItem);
 		addKeyMenuItem = new JMenuItem(Editor.labels.getString("add_key_menu_name"));
 		addKeyMenuItem.setMnemonic(labels.getString("add_key_menu_key").charAt(0));
+		addKeyMenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_K, ActionEvent.CTRL_MASK));
 		addKeyMenuItem.getAccessibleContext().setAccessibleDescription(labels.getString("add_key_menu_description"));
 		addKeyMenuItem.addActionListener(addKeyActionListener);
 		keyMenu.add(addKeyMenuItem);
@@ -867,6 +886,7 @@ public class Editor {
 		langMenu.getAccessibleContext().setAccessibleDescription(labels.getString("lang_menu_description"));
 		addLangMenuItem = new JMenuItem(Editor.labels.getString("add_lang_menu_name"));
 		addLangMenuItem.setMnemonic(labels.getString("add_lang_menu_key").charAt(0));
+		addLangMenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_L, ActionEvent.CTRL_MASK));
 		addLangMenuItem.getAccessibleContext().setAccessibleDescription(labels.getString("add_lang_menu_description"));
 		addLangMenuItem.addActionListener(addLangActionListener);
 		addLangMenuItem.setEnabled(false);
@@ -1018,6 +1038,7 @@ public class Editor {
 			Name n = getName(i);
 			n.isModified = false;
 		}
+		globalModified = false;
 		tree.repaint(tree.getBounds());
 		table.repaint(table.getBounds());
 	}
@@ -1100,6 +1121,12 @@ public class Editor {
 
 	private ActionListener deleteKeyActionListener = new ActionListener(){
 		public void actionPerformed(ActionEvent e){
+			deleteKeyConfirm();
+		}
+	};
+
+	private void deleteKeyConfirm(){
+		if (workingName != null && 	workingIndex >= 0){
 			int result = JOptionPane.showConfirmDialog(
 				frame,
 				Editor.labels.getString("delete_key_message"),
@@ -1111,7 +1138,7 @@ public class Editor {
 				deleteKey(workingName);
 			}
 		}
-	};
+	}
 
 
 	private ActionListener addLangActionListener = new ActionListener(){
