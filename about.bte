@@ -1,0 +1,22 @@
+<%bte.doc super="page.bte"%>
+<%bte.tpl name=pageTitle %>About Attesoro<%/bte.tpl%>
+<%bte.tpl name=description %>About Attesoro, the free translation editor for Java.<%/bte.tpl%>
+<%bte.tpl name=keywords %>about, history, attesoro<%/bte.tpl%>
+<%bte.tpl name=aboutLinkText %><b>About</b><%/bte.tpl%>
+<%bte.tpl name=pageContent %>
+<h2>Purpose</h2>
+<p>Attesoro was written to help translators translate Java programs more effectively.  
+When he was programming TulipChain, Stephen Ostermiller, found that many translators had
+a hard time working with the properties files.  Especially when the translator was using
+a non ISO-8859-1 language such as Polish or Chinese.</p>
+
+<h2>Name</h2>
+<p>Attesoro is named after the Rosetta stone.  This famous stone had the same writing in three
+languages and helped modern scientist decode Egyptian hyroglyphics.  Attesoro is "O' Rosetta" backwards and
+Italian it roughly translates to "A Treasure".</p>
+
+<h2>Contributors</h2>
+<p>Several other people have contributed to Attesoro.  Thank you to Carlo Magnaghi for fixing bugs
+and writing documentation.  Also thank you to Wojciech Sobczuk for bug reports.</p>
+<%/bte.tpl%>
+<%/bte.doc%>

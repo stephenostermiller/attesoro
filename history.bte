@@ -1,0 +1,30 @@
+<%bte.doc super="page.bte"%>
+<%bte.tpl name=pageTitle %>Attesoro Changelog<%/bte.tpl%>
+<%bte.tpl name=description %>Version history for Attesoro, the translation editor for Java programs.<%/bte.tpl%>
+<%bte.tpl name=keywords %>history, version, versions, changes, changelog, attesoro, jar<%/bte.tpl%>
+<%bte.tpl name=pageContent %>
+<h3>Version History</h3>
+
+<h4>Version 1.3</h4>
+<ul>
+<li>Fixed partial crash when deleting the last key in the translation key list.</li>
+<li>Added accelerator keys for menus.</li>
+</ul>
+
+<h4>Version 1.2</h4>
+<ul>
+<li>Fixed crash when opening properties files that start with a Comment, a new line, and then a name/value pair.</li>
+<li>The open file dialog box hides only properties files that have a language abbreviation in the name rather than any with an underscore in the name.</li>
+</ul>
+
+<h4>Version 1.1</h4>
+<ul>
+<li>Blank lines in properties files are now correctly ignored.</li>
+</ul>
+
+<h4>Version 1.0</h4>
+<ul>
+<li>Initial Attesoro release.</li>
+</ul>
+<%/bte.tpl%>
+<%/bte.doc%>

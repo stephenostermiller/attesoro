@@ -8,25 +8,14 @@
 and install the Java2 Runtime Environment version 1.4 or later (J2SE JRE) from java.sun.com 
 if you do not already have it installed.</p>
 
-<p class=even><big><b><a href="attesoro_1_2.jar">Download</a></b></big> the latest version (Version 1.2) of Attesoro 
-(Executable Jar - 179k)</p>
+<p class=even><big><b><a href="attesoro_1_3.jar">Download</a></b></big> the latest version (Version 1.3) of Attesoro 
+(Executable Jar - 183k)</p>
 
-<h3>Version History</h3>
-
-<h4>Version 1.2</h4>
-<ul>
-<li>Fixed crash when opening properties files that start with a Comment, a new line, and then a name/value pair.</li>
-<li>The open file dialog box hides only properties files that have a language abbreviation in the name rather than any with an underscore in the name.</li>
-</ul>
-
-<h4>Version 1.1</h4>
-<ul>
-<li>Blank lines in properties files are now correctly ignored.</li>
-</ul>
-
-<h4>Version 1.0</h4>
-<ul>
-<li>Initial Attesoro release.</li>
-</ul>
+<p>
+Version 1.3 - crash fix, menu accelerators.<br>
+Version 1.2 - crash fix, open dialog changes.<br>
+Version 1.1 - blank lines handled properly.<br>
+<a href="history.html">Older Changes</a><br>
+</p>
 <%/bte.tpl%>
 <%/bte.doc%>

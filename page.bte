@@ -44,6 +44,8 @@ name=usersLinkText %><%/bte.grp %></li>
 <li><%bte.grp onDefault=ok %><%bte.inc 
 name=hackingLinkText %><%/bte.grp %></li>
 <li><%bte.grp onDefault=ok %><%bte.inc 
+name=aboutLinkText %><%/bte.grp %></li>
+<li><%bte.grp onDefault=ok %><%bte.inc 
 name=licenseLinkText %><%/bte.grp %></li>
 </ul>
 </div>
@@ -80,4 +82,5 @@ and send the translated file to Stephen. Existing locales:
 <%bte.tpl name=translateLinkText %><a href="translate.html">Translate</a><%/bte.tpl%>
 <%bte.tpl name=createLinkText %><a href="create.html">Add Locale</a><%/bte.tpl%>
 <%bte.tpl name=saveLinkText %><a href="save.html">Save</a><%/bte.tpl%>
+<%bte.tpl name=aboutLinkText %><a href="about.html">About</a><%/bte.tpl%>
 <%/bte.doc%>
