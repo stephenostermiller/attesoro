@@ -5,10 +5,10 @@
 <%bte.tpl name=downloadLinkText %><b>Download</b><%/bte.tpl%>
 <%bte.tpl name=pageContent %>
 <p class=odd><big><b><a href="http://java.sun.com/webapps/getjava/BrowserRedirect?locale=en&host=www.java.com:80" target="_blank">Download</a></b></big>
-and install the Java2 Runtime Environment version 1.4 or later (J2SE JRE) from java.sun.com 
+and install the Java2 Runtime Environment version 1.5 or later (J2SE JRE) from java.sun.com 
 if you do not already have it installed.</p>
 
-<p class=even><big><b><a href="attesoro_1_6.jar">Download</a></b></big> the latest version (Version 1.4) of Attesoro 
+<p class=even><big><b><a href="attesoro_1_6.jar">Download</a></b></big> the latest version (Version 1.6) of Attesoro 
 (Executable Jar - 214k)</p>
 
 <p>
