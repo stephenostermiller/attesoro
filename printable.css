@@ -1,7 +1,7 @@
 body { 
   color:black;
   background-color:white;
-  font-family:"Times New Roman",Times,serif; 
+  font-family:"Bitstream Vera","Times New Roman",Times,serif; 
 }
 a {
   color:black;
@@ -11,7 +11,7 @@ a {
   display:none;
 }
 table.advantages {
-  border:thin black ridge;
+  border:none;
 }
 table.advantages tr td, table.advantages tr th { 
   border:thin black ridge;

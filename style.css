@@ -1,7 +1,7 @@
 body { 
   color:black;
-  background-color:white;  
-  font-family:Helvetica,Arial,sans-serif;
+  background-color:#aaaaaa;
+  font-family:"Bitstream Vera Sans",Helvetica,Arial,sans-serif;
   padding:0cm;
   margin:0cm;
 }
@@ -9,11 +9,27 @@ a:link {
   color:#0c600c;
 }
 .page {
-  display:table;
   height:100%;
+  border:none;
+  padding:0;
+  margin:0;
+  border-collapse: collapse;
 }
-.pagerow {
-  display:table-row;
+.sidebar {
+  background-color:#e59f70;
+  width:122px;
+  text-align:center;
+  vertical-align:top;
+  border:none;
+  padding:.2cm;
+  margin:0;
+}
+.pagecontent {
+  background-color:#aaaaaa;
+  vertical-align:top;
+  border:none;
+  padding:.4cm;
+  margin:0;
 }
 .navlinks {
   text-align:left;
@@ -27,20 +43,7 @@ a:link {
   padding:.1cm 0cm 0cm 0cm;
   margin:0cm;
 }
-.sidebar {
-  background:#e59f70;
-  display:table-cell;
-  width:122;
-  text-align:center;
-  vertical-align:top;
-}
-div.pagecontent {
-  display:table-cell;
-  padding:.3cm;
-  border:thin black ridge;
-  background:#aaaaaa;
-  vertical-align:top;
-}
+
 table.advantages {
   border:none;
 }

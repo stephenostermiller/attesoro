@@ -1,5 +1,5 @@
 <%bte.doc output="false"%>
-<%bte.tpl name=page %><!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<%bte.tpl name=page %><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head><title><%bte.inc name=pageTitle %></title><%bte.grp onNoResolve=warning %>
 <meta name="description" content="<%bte.inc name=description %>"><%/bte.grp %><%bte.grp onNoResolve=warning %>
@@ -10,9 +10,9 @@
 <%bte.grp onNoResolve=ok %><%bte.inc name=headContent %><%/bte.grp %>
 </head>
 <body>
-<div class=page>
-<div class=pagerow>
-<div class=sidebar>
+<table class=page summary="">
+<tr class=pagerow>
+<td class=sidebar>
 <img src="attesoro.png" width=122 height=150 alt=Attesoro hspace=10 vspace=10>
 <div class=navlinks>
 <ul>
@@ -33,15 +33,15 @@ name=hackingLinkText %><%/bte.grp %></li>
 name=licenseLinkText %><%/bte.grp %></li>
 </ul>
 </div>
-</div>
-<div class=pagecontent>
+</td>
+<td class=pagecontent>
 <h1 align=center><a name="content"><%bte.inc name=pageTitle %></a></h1>
 <div class=content><%bte.inc name=pageContent %></div>
 <br clear=all>
 <div class=copyright><p>Copyright &copy; 2002-2003 <a href="http://ostermiller.org/contact.pl?regarding=Attesoro" class=mail>Stephen Ostermiller</a></p></div>
-</div>
-</div>
-</div>
+</td>
+</tr>
+</table>
 </body>
 </html><%/bte.tpl%>
 <%bte.tpl name=homeLinkText %><a href="./">Overview</a><%/bte.tpl%>
