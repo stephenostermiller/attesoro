@@ -74,7 +74,6 @@ public class Editor {
 	private JMenuItem saveMenuItem;
 
 	private final static Pattern ALREADY_TRANSLATED_FILE = Pattern.compile("^.*_(?:ar|be|bg|ca|cs|da|de|el|en|es|et|fi|fr|hi|hr|hu|is|it|iw|ja|ko|la|lt|lv|mk|nl|no|pl|pt|ro|ru|sh|sk|sl|sq|sr|sv|th|tr|uk|zh)(?:(?:_(?:AE|AL|AR|AT|AU|BE|BG|BH|BO|BR|BY|CA|CH|CL|CN|CO|Co|CR|CZ|DE|DK|DO|DZ|EC|EE|EG|ES|FI|FR|GB|GR|GT|HK|HN|HR|HU|IE|IL|IN|IQ|IS|IT|JO|JP|KR|KW|LB|LT|LU|LV|LY|MA|MK|MX|NI|NL|NO|NY|NZ|OM|PA|PE|PL|PR|PT|PY|QA|RO|RU|SA|SD|SE|SI|SK|SV|SY|TH|TN|TR|TW|UA|US|UY|VE|YE|YU|ZA))(?:_(?:[A-Za-z0-9]+))?)?\\.properties$");
-//	private final static Pattern ALREADY_TRANSLATED_FILE = Pattern.compile("$.*_(?:ar|be|bg|ca|cs|da|de|el|en|es|et|fi|fr|hi|hr|hu|is|it|iw|ja|ko|la|lt|lv|mk|nl|no|pl|pt|ro|ru|sh|sk|sl|sq|sr|sv|th|tr|uk|zh).*^");
 
 	private Name getName(int ind){
 		return (Name)names.get(ind);
