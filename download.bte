@@ -6,6 +6,6 @@
 <%bte.tpl name=pageContent %>
 <p><big><b><a href="http://java.sun.com/j2se/1.4/download.html" target="_new">Download</a></b></big> and install the Java2 Runtime Environment version 1.4 (J2SE JRE) from java.sun.com if you do not already have it installed.</p>
 
-<p><big><b><a href="attesoro.jar">Download</a></b></big> the latest version of Attesoro (Executable Jar - 127k)</p>
+<p><big><b><a href="attesoro.jar">Download</a></b></big> the latest version of Attesoro (Executable Jar - 142k)</p>
 <%/bte.tpl%>
 <%/bte.doc%>

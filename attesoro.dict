@@ -1,4 +1,4 @@
-personal_ws-1.1 english 292
+personal_ws-1.1 english 299
 aboutItem
 aboutMenuItem
 AbstractTableModel
@@ -25,6 +25,7 @@ baseName
 BorderLayout
 changedUpdate
 charAt
+ClassLoader
 clearSelection
 commentArea
 commentLabel
@@ -75,6 +76,7 @@ getDefaultProperty
 getDescription
 getDividerLocation
 getHeight
+getImage
 getInsets
 getKeys
 getLastSelectedPathComponent
@@ -94,6 +96,7 @@ getSelectedFile
 getSize
 getSource
 getString
+getSystemResource
 getTableCellRendererComponent
 getText
 getTreeCellRendererComponent
@@ -103,6 +106,7 @@ getValueIsAdjusting
 getWidth
 getX
 getY
+gif
 globalModified
 gpl
 GridLayout
@@ -110,6 +114,7 @@ hasFocus
 hasMoreElements
 hasMoreTokens
 helpMenu
+ImageIcon
 indexOf
 ini
 init
@@ -189,6 +194,7 @@ NumberFormatException
 oldName
 openFile
 Ostermiller
+png
 popup
 popupSize
 preferredLayoutSize
@@ -230,6 +236,7 @@ setEnabled
 setFileFilter
 setForeground
 setHgap
+setIconImage
 setJMenuBar
 setLocation
 setProperty

@@ -96,10 +96,10 @@ allclean: clean
 .PHONY: build
 build: attesoro.jar
 
-attesoro.jar: *.java *.bte *.ini *.class *.sh *.properties *.dict Makefile 
+attesoro.jar: *.java *.bte *.png *.ini *.class *.sh *.properties *.dict Makefile 
 	@echo Make: Building jar file.
 	@mkdir -p com/Ostermiller/attesoro
-	@cp *.java *.bte *.ini *.class *.sh *.properties *.dict Makefile com/Ostermiller/attesoro/
+	@cp *.java *.bte *.png *.ini *.class *.sh *.properties *.dict Makefile com/Ostermiller/attesoro/
 	@mkdir -p com/Ostermiller/util
 	@cp ../util/StringHelper* ../util/UberProperties* ../util/PropertiesLexer* ../util/PropertiesToken* ../util/Browser* com/Ostermiller/util/
 	@jar mcfv Attesoro.mf attesoro.jar com/ > /dev/null
@@ -113,7 +113,7 @@ update:
 commit: 
 	@$(CVS) commit
 
-release: *.html *.css attesoro.jar install.sh
+release: *.html *.css *.png attesoro.jar install.sh .htaccess
 	@./release.sh $?
 	@touch release
 

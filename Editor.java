@@ -515,7 +515,13 @@ public class Editor {
 			y = 50;
 		}
 		frame.setLocation(x,y);
-
+		frame.setIconImage(
+			new ImageIcon(
+				ClassLoader.getSystemResource(
+					"com/Ostermiller/attesoro/attesoro.png"
+				)
+			).getImage()
+		);
 
 		defaultCommentLabel = new JLabel(
 			Editor.labels.getString("default_comment_label")

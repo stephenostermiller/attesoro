@@ -12,6 +12,7 @@
 </head>
 <body>
 <table align=right hspace=10 class=sidebar><tr><td>
+<img src="attesoro.png" width=122 height=150 alt=Attesoro hspace=10 vspace=10>
 <ul class=sidebar>
 <li><%bte.grp onDefault=ok %><%bte.inc 
 name=homeLinkText %><%/bte.grp %></li>
