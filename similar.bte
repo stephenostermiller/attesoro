@@ -36,5 +36,19 @@ comments on the properties are also carefully modified.</li>
 address of the author, but the email to that address bounces.</li>
 </ol>
 </div>
+<div class=even>
+<a href="http://www.solyp.com/2975.html">Babel Fish - Language Resource Editor by SOLYP Informatik GmbH</a> (website in German)<br>
+<img alt="Babel Fish screenshot" vspace=10 hspace=10 width=548 height=886 src="http://ostermiller.org/attesoro/babelfish.png"><br>
+Download: <a href="http://www.solyp.com/binaries/2975/babelfish.zip">Babel Fish zip file containing executable jar, license, help, samples, and icon </a><br>
+License: Freeware, no commercial distribution, (closed source) - see license file in download for more info</a>
+<p>Babel Fish is a very capable program.  For translators that are targeting two or more languages
+at once, it shows all the translations for all languages on the screen at one time.  However, that
+configuration will get unwieldy as the number of translated languages grows.</p>
+
+<p>Like <B style="color:black;background-color:#ffff66">Attesoro</B>, it is written in Java.  The flags for each language give the application an
+attractive look and feel.</p>
+<p>It does however, have one significant disadvantage to <B style="color:black;background-color:#ffff66">Attesoro</B>: Comments are not maintained in
+the properties file.  They are all removed whenever the translation is saved.
+</div>
 <%/bte.tpl%>
 <%/bte.doc%>
