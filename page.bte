@@ -19,12 +19,25 @@
 <li><%bte.grp onDefault=ok %><%bte.inc 
 name=homeLinkText %><%/bte.grp %></li>
 <li><%bte.grp onDefault=ok %><%bte.inc 
-name=screenshotLinkText %><%/bte.grp %></li>
+name=instructionsLinkText %><%/bte.grp %>
+<ul>
 <li><%bte.grp onDefault=ok %><%bte.inc 
 name=downloadLinkText %><%/bte.grp %><%bte.grp onNoResolve=ok %>
 <%bte.inc name=downloadLinks %><%/bte.grp %></li>
 <li><%bte.grp onDefault=ok %><%bte.inc 
-name=instructionsLinkText %><%/bte.grp %></li>
+name=runLinkText %><%/bte.grp %></li>
+<li><%bte.grp onDefault=ok %><%bte.inc 
+name=openLinkText %><%/bte.grp %></li>
+<li><%bte.grp onDefault=ok %><%bte.inc 
+name=translateLinkText %><%/bte.grp %></li>
+<li><%bte.grp onDefault=ok %><%bte.inc 
+name=createLinkText %><%/bte.grp %></li>
+<li><%bte.grp onDefault=ok %><%bte.inc 
+name=saveLinkText %><%/bte.grp %></li>
+</ul>
+</li>
+<li><%bte.grp onDefault=ok %><%bte.inc 
+name=screenshotLinkText %><%/bte.grp %></li>
 <li><%bte.grp onDefault=ok %><%bte.inc 
 name=usersLinkText %><%/bte.grp %></li>
 <li><%bte.grp onDefault=ok %><%bte.inc 
@@ -48,7 +61,12 @@ name=licenseLinkText %><%/bte.grp %></li>
 <%bte.tpl name=screenshotLinkText %><a href="screenshot.html">Screenshots</a><%/bte.tpl%>
 <%bte.tpl name=downloadLinkText %><a href="download.html">Download</a><%/bte.tpl%>
 <%bte.tpl name=instructionsLinkText %><a href="instructions.html">Instructions</a><%/bte.tpl%>
+<%bte.tpl name=runLinkText %><a href="run.html">Run</a><%/bte.tpl%>
+<%bte.tpl name=openLinkText %><a href="open.html">Open Files</a><%/bte.tpl%>
 <%bte.tpl name=hackingLinkText %><a href="modify.html">Hacking</a><%/bte.tpl%>
 <%bte.tpl name=usersLinkText %><a href="users.html">Users</a><%/bte.tpl%>
 <%bte.tpl name=licenseLinkText %><a href="license.html">License</a><%/bte.tpl%>
+<%bte.tpl name=translateLinkText %><a href="translate.html">Translate</a><%/bte.tpl%>
+<%bte.tpl name=createLinkText %><a href="create.html">Add Locale</a><%/bte.tpl%>
+<%bte.tpl name=saveLinkText %><a href="save.html">Save</a><%/bte.tpl%>
 <%/bte.doc%>

@@ -1,0 +1,41 @@
+<%bte.doc super="page.bte"%>
+<%bte.tpl name=pageTitle %>Attesoro Instructions - Adding Languages<%/bte.tpl%>
+<%bte.tpl name=description %>Instructions for creating new language and locale files using Attesoro, the Java translation editor.<%/bte.tpl%>
+<%bte.tpl name=keywords %>language, languages, country, countries, locale, locales, add, adding, create, creating, attesoro, java<%/bte.tpl%>
+<%bte.tpl name=createLinkText %><b>Add Locale</b><%/bte.tpl%>
+<%bte.tpl name=pageContent %>
+
+<h2>Adding Locales and Languages</h2>
+
+If you are translating into a new language, you will have to add a translation file for that language.
+
+<p class=odd>To add a new locale select <b>Locale</b> and then <b>New</b> in the <b>Edit</b> menu. 
+Attesoro will display a list of the possible Locales.</p>
+
+<table border=0><tr><td width='30%'>
+Attesoro locale creation dialog.
+</td><td width="70%">
+<img src="http://ostermiller.org/attesoro/create.png" width=268 height=232 alt="Attesoro locale creation dialog.">
+</td></tr></table>
+
+<p>A locale is composed of three parts:</p>
+<ol>
+<li>Language: this is the language for the locale, 
+for example French or German.</li>
+<li>Country: you can have more locales for the same language to account for 
+the fact that the French spoken in France is different from the French spoken in Canada.</li>
+<li>Variant: this field accounts for other differences (like using Euro).</li>
+</ol>
+
+<p>Normally you may want to just select a language and keep the Country and 
+Variant fields generic (All); this would mean that your translation is suitable 
+for all countries in which the selected language is spoken.</p>
+
+<p class=even>Select the new language to be added and click <b>OK</b>. The new 
+language will be added to the list of locales.</p>
+
+<p>At this point the new language is ready to be <a href="translate.html">translated</a>.</p>
+
+
+<%/bte.tpl%>
+<%/bte.doc%>

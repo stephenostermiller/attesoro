@@ -35,7 +35,7 @@ a:link {
   text-align:left;
 }
 .sidebar ul {
-  padding:.3cm 0cm 0cm .5cm;
+  padding:0cm 0cm 0cm .4cm;
   margin:0cm;
   list-style:none;
 }
@@ -71,7 +71,7 @@ a.mail {
   padding:.3cm;
   -moz-border-radius:3px;
 }
-p.even, p.odd {
+p.even, p.odd, p.evenodd, li.even, li.odd, li.evenodd {
   margin:0;
   padding:.3cm .1cm .3cm .1cm;
   -moz-border-radius:3px;

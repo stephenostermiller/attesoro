@@ -1,0 +1,17 @@
+<%bte.doc super="page.bte"%>
+<%bte.tpl name=pageTitle %>Attesoro Instructions - Saving Your Work<%/bte.tpl%>
+<%bte.tpl name=description %>Instructions for saving translations using Attesoro, the Java translation editor.<%/bte.tpl%>
+<%bte.tpl name=keywords %>save, saving, store, properties, attesoro, java<%/bte.tpl%>
+<%bte.tpl name=saveLinkText %><b>Save</b><%/bte.tpl%>
+<%bte.tpl name=pageContent %>
+
+<h2>Saving Your Work</h2>
+
+<p class=odd>when you have finished translating select <b>Save</b> in <b>File</b> menu to 
+save changes (saving periodically is also recommended if you are making a lot of editing).</p>
+
+<p>Attesoro will save one property file for each locale that has its own translation.  At this
+point, those files are ready to be incorporated into the Java program.</p>
+
+<%/bte.tpl%>
+<%/bte.doc%>

@@ -1,0 +1,41 @@
+<%bte.doc super="page.bte"%>
+<%bte.tpl name=pageTitle %>Attesoro Instructions - Translating<%/bte.tpl%>
+<%bte.tpl name=description %>Instructions for translation mechanics using Attesoro, the Java translation editor.<%/bte.tpl%>
+<%bte.tpl name=keywords %>translate, translation, attesoro, editor, translation, java<%/bte.tpl%>
+<%bte.tpl name=translateLinkText %><b>Translate</b><%/bte.tpl%>
+<%bte.tpl name=pageContent %>
+
+<h2>Translating</h2>
+
+After Attesoro is running and file that needs to be translated is open, 
+the translation work can begin.
+
+<ol>
+<li class=odd>Select a language for which you want to write translations 
+from the list of languages in upper left.  In this example "Italian" has been selected.</li>
+
+<li class=even>Select a translation key from the list in the lower left.  
+In this example "Birthdate:" has been selected.</li>
+
+<li class=odd>The text that needs to be translated will appear 
+in the "Default Text" section at the top right.  
+In this example "Birthdate:" needs to be translated.</li>
+
+<li class=even>Type the translation into the "Translated Text" section.
+In this example "Birthdate:" has been translated to "Data di nascita:".</li>
+</ol>
+
+<table border=0><tr><td width='30%'>
+Selecting a languge and a key, then translating the text.
+</td><td width="70%">
+<img src="http://ostermiller.org/attesoro/translate.png" width=561 height=391 alt="Selecting a languge and a key, then translating the text.">
+</td></tr></table>
+
+<h2>Comments</h2>
+Comments do not appear in the running Java application.  Comments may 
+contain instructions about where in a program the text is used, or how
+it should be translated.  Unless instructed otherwise, it is not neccessary to
+translate comments.
+
+<%/bte.tpl%>
+<%/bte.doc%>

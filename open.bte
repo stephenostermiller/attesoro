@@ -1,0 +1,57 @@
+<%bte.doc super="page.bte"%>
+<%bte.tpl name=pageTitle %>Attesoro Instructions - Opening Files<%/bte.tpl%>
+<%bte.tpl name=description %>Instructions for opening files to translate with Attesoro - the Java translation editor.<%/bte.tpl%>
+<%bte.tpl name=keywords %>run, run, start, starting, startup, lauch, execute, jar, executable, exe, exec, attesoro, editor, translation, java<%/bte.tpl%>
+<%bte.tpl name=openLinkText %><b>Open Files</b><%/bte.tpl%>
+<%bte.tpl name=pageContent %>
+
+<h2>Opening Files</h2>
+
+<p>You should now select the file to translate; note that Java programs use a different file 
+for each language all sharing the same header; for example:</p>
+
+<ul>
+<li>access.properties</li>
+<li>access_en.properties</li>
+<li>access_it.properties</li>
+</ul>
+
+<p>The first is the base file (the one used by the Java program if a localized 
+file cannot be found), the other are localized files (for English and Italian in this case).</p>
+
+<p class=odd>Select the <b>Open</b> item in the <b>File</b> menu; Attesoro displays a file selection 
+dialog;  Each of the base files should show up.  Select the base file that you wish to translate.
+Attesoro will automatically open all languages associated with the base file.</p>
+
+<table border=0><tr><td width='30%'>
+Attesoro open file dialog.
+</td><td width="70%">
+<img src="http://ostermiller.org/attesoro/opendialog.png" width=512 height=350 alt="Attesoro open file dialog.">
+</td></tr></table>
+
+<table border=0><tr><td width='30%'>
+Attesoro after opening a access_rb.properties.
+</td><td width="70%">
+<img src="http://ostermiller.org/attesoro/open.png" width=561 height=391 alt="Attesoro after opening a access_rb.properties.">
+</td></tr></table>
+
+<h2>Finding Files to Translate</h2>
+
+<p>The program that you are translating should come with instructions for locating the 
+properties files.  You may be given them in a directory or they in a jar archive.  If they are in 
+a jar archive, you will need to extract them to your local file system.</p>
+
+<p>Jar files are the same as zip files so you
+can rename the jar file to a zip file and then use any unzip program to extract
+the contents.  Alternately you can use the jar tool that comes with Java.  It
+accepts a command line something like this:<br>
+<line><i>jar&nbsp;xfv&nbsp;file.jar</i></line><br>
+Translation files have the extension ".properties".</p>
+
+<h2>Command Line</h2>
+
+<p>Console users may wish to specify the name of the file to translate on the command line
+they start Attesoro.</p>
+
+<%/bte.tpl%>
+<%/bte.doc%>

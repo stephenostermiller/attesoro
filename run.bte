@@ -1,0 +1,31 @@
+<%bte.doc super="page.bte"%>
+<%bte.tpl name=pageTitle %>Attesoro Instructions - Executing<%/bte.tpl%>
+<%bte.tpl name=description %>Instructions for opening Attesoro - the Java translation editor.<%/bte.tpl%>
+<%bte.tpl name=keywords %>open, opening, file, files, properties, resource bundle, attesoro, editor, translation, java<%/bte.tpl%>
+<%bte.tpl name=runLinkText %><b>Run</b><%/bte.tpl%>
+<%bte.tpl name=pageContent %>
+
+<h2>Running</h2>
+
+Once you have <a href="download.html">downloaded Attesoro</a>, downloaded the Java runtime, 
+and installed the Java runtime, you are ready to start Attesoro.  
+There are three ways to start the program:
+
+<ol>
+<li class=odd>Double click on the icon for the Attesoro jar file.<br>
+On Windows, the icon will look something like this:<br>
+<img src="http://ostermiller.org/attesoro/jaricon.png" width=160 height=58 alt="Attesoro.jar, Executable Jar File"></li>
+<li class=evenodd>If java has not been associated with jar files properly, 
+you may need to open a command window and issue the command line:<br>
+<b><line><i>java&nbsp;-jar&nbsp;attesoro.jar</i></line></b></li>
+<li class=evenodd>There is another command line that will work as well:<br>
+<b><line><i>java&nbsp;-classpath&nbsp;attesoro.jar&nbsp;com.Ostermiller.attesoro.Editor</i></line></b></li>
+</ol>
+
+<table border=0><tr><td width='30%'>
+Attesoro's main window when the program is launched.
+</td><td width="70%">
+<img src="http://ostermiller.org/attesoro/blank.png" width=561 height=391 alt="Attesoro as it looks when it is first run, before any files are open.">
+</td></tr></table>
+<%/bte.tpl%>
+<%/bte.doc%>

@@ -1,30 +1,16 @@
 <%bte.doc super="page.bte"%>
 <%bte.tpl name=pageTitle %>Attesoro Instructions<%/bte.tpl%>
-<%bte.tpl name=description %>Instructions for installing and using Attesoro.<%/bte.tpl%>
+<%bte.tpl name=description %>Instructions for downloading, installing and using Attesoro - the Java translation editor..<%/bte.tpl%>
 <%bte.tpl name=keywords %>instructions, instructions, attesoro, editor, translation, java<%/bte.tpl%>
 <%bte.tpl name=instructionsLinkText %><b>Instructions</b><%/bte.tpl%>
 <%bte.tpl name=pageContent %>
-<h2>Running</h2>
-<p>All you need to do is double click the jar file to start Attesoro.  
-Some systems may not support executable jar files correctly.  
-If double clicking on the jar file does not work, try the following 
-command lines:<br>
-<line><i>java&nbsp;-jar&nbsp;attesoro.jar</i></line><br>
-<line><i>java&nbsp;-classpath&nbsp;attesoro.jar&nbsp;com.Ostermiller.attesoro.Editor</i></line></p>
 
-<h2>Finding Files to Translate</h2>
-<p>To use Attesoro you need to be able to open a file to translate.
-Since most programs come in a jar file, you may need to extract the jar file
-to find the translatable files.  Jar files are the same as zip files so you
-can rename the jar file to a zip file and then use any unzip program to extract
-the contents.  Alternately you can use the jar tool that comes with Java.  It
-accepts a command line something like this:<br>
-<line><i>jar&nbsp;xfv&nbsp;file.jar</i></line><br>
-Translation files have the extension ".properties".</p>
+<p class=odd><b><a href="download.html">Download</a></b> - Download Attesoro and the Java runtime.  Install the Java runtime.</p>
+<p class=even><b><a href="run.html">Run</a></b> - Start Attesoro by executing the Attesoro jar file.</p>
+<p class=odd><b><a href="open.html">Open Files</a></b> - Open the properties files that need to be translated in Attesoro.</p>
+<p class=even><b><a href="translate.html">Translate</a></b> - Select a language, select keys, and write translations.</p>
+<p class=odd><b><a href="create.html">Add Locales</a></b> - Add languages to the translation from the Edit menu.</p>
+<p class=even><b><a href="save.html">Save</a></b> - Save your work from the file menu.</p>
 
-<h2>Translating</h2>
-<p>Once you have a file to translate it you can open it from the File --> Open
-menu of Attesoro.  You can also specify the translation file on the command line
-when you start Attesoro.</p>
 <%/bte.tpl%>
 <%/bte.doc%>
