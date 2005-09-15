@@ -58,5 +58,8 @@ or none of the changes when saving the file.</td>
 <td class=solution>Attesoro displays keys with changed translations in green and allows you
 to revert individual keys.</td></tr>
 </table>
+
+<p><a href="http://attesoro.org/">Atteso's home page will be moving to attesoro.org</a></p>
+
 <%/bte.tpl%>
 <%/bte.doc%>
