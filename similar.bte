@@ -4,11 +4,17 @@
 <%bte.tpl name=keywords %>similar to attesoro, resource bundle manager, translation managers, babel fish, zavel jrc editor,  <%/bte.tpl%>
 <%bte.tpl name=similarLinkText %><b>Similar Programs</b><%/bte.tpl%>
 <%bte.tpl name=pageContent %>
+<div class=even>
+<a href="http://attesoro.org/">Attesoro written by Stephen Ostermiller</a>
+<p><img vspace=10 hspace=10 alt="Attesoro screenshot showing Danish translation of English strings." src="http://attesoro.org/screenshot.png" width=483 height=322></p>
+Download: <a href="http://attesoro.org/download.html">Attesoro download page</a><br>
+License: <a href="http://attesoro.org/license.html">Open Source - GPL</a>
+</div>
 <div class=odd>
-<a href="http://oss.software.ibm.com/cvs/icu4j/~checkout~/unicodetools/com/ibm/rbm/docs/index.html">IBM's Resource Bundle Manager written by Jared Jackson</a><br>
-<img alt="Resource Bundle Manager screenshot" vspace=10 hspace=10 width=662 height=368 src="http://ostermiller.org/attesoro/resourcemanager.png"><br>
-Download: <a href="http://oss.software.ibm.com/icu4j/demo_tools/RBManager.html">Resource Bundle Manager download page</a><br>
-License: <a href="http://oss.software.ibm.com/cvs/icu/~checkout~/icu/license.html">Open Source - ICU License 1.8.1</a>
+<a href="http://www-306.ibm.com/software/globalization/icu/rbmanager.jsp">IBM's Resource Bundle Manager written by Jared Jackson</a><br>
+<img alt="Resource Bundle Manager screenshot" vspace=10 hspace=10 width=662 height=368 src="http://attesoro.org/resourcemanager.png"><br>
+Download: <a href="http://www-306.ibm.com/software/globalization/icu/rbmanager.jsp">Resource Bundle Manager download page</a><br>
+License: Open Source - ICU License 1.8.1
 <p>Resource Bundle Manager is a capable program with some features not available in Attesoro.
 It puts comments on all translated items that include meta data such as who did the translation and when
 the translation was done.  It can create groups for items to be translated.  It also has a nice search feature and it can show statistics including
@@ -39,7 +45,7 @@ address of the author, but the email to that address bounces.</li>
 
 <div class=even>
 <a href="http://www.solyp.com/2975.html">Babel Fish - Language Resource Editor by SOLYP Informatik GmbH</a> (website in German)<br>
-<img alt="Babel Fish screenshot" vspace=10 hspace=10 width=548 height=886 src="http://ostermiller.org/attesoro/babelfish.png"><br>
+<img alt="Babel Fish screenshot" vspace=10 hspace=10 width=548 height=886 src="http://attesoro.org/babelfish.png"><br>
 Download: <a href="http://www.solyp.com/binaries/2975/babelfish.zip">Babel Fish zip file containing executable jar, license, help, samples, and icon </a><br>
 License: Freeware, no commercial distribution, (closed source) - see license file in download for more info</a>
 <p>Babel Fish is a very capable program.  For translators that are targeting two or more languages
@@ -55,7 +61,7 @@ the properties file.  They are all removed whenever the translation is saved.</p
 
 <div class=odd>
 <a href="http://www.zaval.org/products/jrc-editor/"> Zaval Java Resource Editor (JRC-Editor) by The Zaval CE Group</a><br>
-<img alt="Zaval JRC Editor screenshot" vspace=10 hspace=10 width=959 height=687 src="zaval_jrc_editor.png"><br>
+<img alt="Zaval JRC Editor screenshot" vspace=10 hspace=10 width=959 height=687 src="http://attesoro.org/zaval_jrc_editor.png"><br>
 Download: <a href="http://www.zaval.org/products/jrc-editor/download/">Available in multilpe formats (zip, exe, rpm, tar.gz) with scripts to run on a variety of platforms</a><br>
 License: Open source - GNU General Public License</a>
 <p>Like Babel Fish, Zaval JRC Editor appear to be written for translators that are targeting two or more languages

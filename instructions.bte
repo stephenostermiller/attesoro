@@ -17,9 +17,9 @@
 <table border=1><tr><td colspan=2>
 Carlo Magnaghi compiled a four page user guide that can be downloaded and printed.
 </td></tr><tr><td>
-<a href="http://ostermiller.org/attesoro/Using_Attesoro.pdf">User Guide PDF Format (264K)</a>
+<a href="http://attesoro.org/Using_Attesoro.pdf">User Guide PDF Format (264K)</a>
 </td><td>
-<a href="http://ostermiller.org/attesoro/Using_Attesoro.sxw">User Guide Open Office Format (87K)</a>
+<a href="http://attesoro.org/Using_Attesoro.sxw">User Guide Open Office Format (87K)</a>
 </td></tr></table>
 
 <%/bte.tpl%>

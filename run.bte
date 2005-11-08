@@ -14,7 +14,7 @@ There are three ways to start the program:
 <ol>
 <li class=odd>Double click on the icon for the Attesoro jar file.<br>
 On Windows, the icon will look something like this:<br>
-<img src="http://ostermiller.org/attesoro/jaricon.png" width=160 height=58 alt="Attesoro.jar, Executable Jar File"></li>
+<img src="http://attesoro.org/jaricon.png" width=160 height=58 alt="Attesoro.jar, Executable Jar File"></li>
 <li class=evenodd>If java has not been associated with jar files properly, 
 you may need to open a command window and issue the command line:<br>
 <b><line><i>java&nbsp;-jar&nbsp;attesoro.jar</i></line></b></li>
@@ -25,7 +25,7 @@ you may need to open a command window and issue the command line:<br>
 <table border=0><tr><td width='30%'>
 Attesoro's main window when the program is launched.
 </td><td width="70%">
-<img src="http://ostermiller.org/attesoro/blank.png" width=561 height=391 alt="Attesoro as it looks when it is first run, before any files are open.">
+<img src="http://attesoro.org/blank.png" width=561 height=391 alt="Attesoro as it looks when it is first run, before any files are open.">
 </td></tr></table>
 <%/bte.tpl%>
 <%/bte.doc%>

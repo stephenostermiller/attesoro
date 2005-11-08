@@ -15,7 +15,7 @@ Attesoro will display a list of the possible Locales.</p>
 <table border=0><tr><td width='30%'>
 Attesoro locale creation dialog.
 </td><td width="70%">
-<img src="http://ostermiller.org/attesoro/create.png" width=268 height=232 alt="Attesoro locale creation dialog.">
+<img src="http://attesoro.org/create.png" width=268 height=232 alt="Attesoro locale creation dialog.">
 </td></tr></table>
 
 <p>A locale is composed of three parts:</p>

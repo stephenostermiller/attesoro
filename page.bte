@@ -84,10 +84,10 @@ and send the translated file to Stephen. Existing locales:
 <%bte.tpl name=openLinkText %><a href="open.html">Open Files</a><%/bte.tpl%>
 <%bte.tpl name=hackingLinkText %><a href="modify.html">Hacking</a><%/bte.tpl%>
 <%bte.tpl name=usersLinkText %><a href="users.html">Users</a><%/bte.tpl%>
-<%bte.tpl name=licenseLinkText %><a href="license.html">License</a><%/bte.tpl%>
-<%bte.tpl name=translateLinkText %><a href="translate.html">Translate</a><%/bte.tpl%>
-<%bte.tpl name=createLinkText %><a href="create.html">Add Locale</a><%/bte.tpl%>
-<%bte.tpl name=saveLinkText %><a href="save.html">Save</a><%/bte.tpl%>
-<%bte.tpl name=aboutLinkText %><a href="about.html">About</a><%/bte.tpl%>
+<%bte.tpl name=licenseLinkText %><a href="http://attesoro.org/license.html">License</a><%/bte.tpl%>
+<%bte.tpl name=translateLinkText %><a href="http://attesoro.org/translate.html">Translate</a><%/bte.tpl%>
+<%bte.tpl name=createLinkText %><a href="http://attesoro.org/create.html">Add Locale</a><%/bte.tpl%>
+<%bte.tpl name=saveLinkText %><a href="http://attesoro.org/save.html">Save</a><%/bte.tpl%>
+<%bte.tpl name=aboutLinkText %><a href="http://attesoro.org/about.html">About</a><%/bte.tpl%>
 <%bte.tpl name=similarLinkText %><a href="similar.html">Similar Programs</a><%/bte.tpl%>
 <%/bte.doc%>
