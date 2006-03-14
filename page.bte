@@ -69,8 +69,8 @@ and send the translated file to Stephen. Existing locales:
 <h1 align=center><a name="content"><%bte.inc name=pageTitle %></a></h1>
 <div class=content><%bte.inc name=pageContent %></div>
 <br clear=all>
-<div class=copyright><p>Copyright &copy; 2002-2004 <a href="http://ostermiller.org/contact.pl?regarding=Attesoro" class=mail>Stephen Ostermiller</a></p></div>
-<div class=sitenav><a href="http://ostermiller.org/">ostermiller.org</a> (<a href="http://ostermiller.org/siteindex.html">site index</a>)</div>
+<div class=copyright><p>Copyright &copy; 2002-2006 <a href="http://ostermiller.org/contact.pl?regarding=Attesoro" class=mail>Stephen Ostermiller</a></p></div>
+<div class=sitenav><a href="http://ostermiller.org/">ostermiller.org</a></div>
 </td>
 </tr>
 </table>
@@ -84,10 +84,10 @@ and send the translated file to Stephen. Existing locales:
 <%bte.tpl name=openLinkText %><a href="open.html">Open Files</a><%/bte.tpl%>
 <%bte.tpl name=hackingLinkText %><a href="modify.html">Hacking</a><%/bte.tpl%>
 <%bte.tpl name=usersLinkText %><a href="users.html">Users</a><%/bte.tpl%>
-<%bte.tpl name=licenseLinkText %><a href="http://attesoro.org/license.html">License</a><%/bte.tpl%>
-<%bte.tpl name=translateLinkText %><a href="http://attesoro.org/translate.html">Translate</a><%/bte.tpl%>
-<%bte.tpl name=createLinkText %><a href="http://attesoro.org/create.html">Add Locale</a><%/bte.tpl%>
-<%bte.tpl name=saveLinkText %><a href="http://attesoro.org/save.html">Save</a><%/bte.tpl%>
-<%bte.tpl name=aboutLinkText %><a href="http://attesoro.org/about.html">About</a><%/bte.tpl%>
+<%bte.tpl name=licenseLinkText %><a href="license.html">License</a><%/bte.tpl%>
+<%bte.tpl name=translateLinkText %><a href="translate.html">Translate</a><%/bte.tpl%>
+<%bte.tpl name=createLinkText %><a href="create.html">Add Locale</a><%/bte.tpl%>
+<%bte.tpl name=saveLinkText %><a href="save.html">Save</a><%/bte.tpl%>
+<%bte.tpl name=aboutLinkText %><a href="about.html">About</a><%/bte.tpl%>
 <%bte.tpl name=similarLinkText %><a href="similar.html">Similar Programs</a><%/bte.tpl%>
 <%/bte.doc%>
