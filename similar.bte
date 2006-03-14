@@ -62,7 +62,7 @@ the properties file.  They are all removed whenever the translation is saved.</p
 <div class=odd>
 <a href="http://www.zaval.org/products/jrc-editor/"> Zaval Java Resource Editor (JRC-Editor) by The Zaval CE Group</a><br>
 <img alt="Zaval JRC Editor screenshot" vspace=10 hspace=10 width=959 height=687 src="http://attesoro.org/zaval_jrc_editor.png"><br>
-Download: <a href="http://www.zaval.org/products/jrc-editor/download/">Available in multilpe formats (zip, exe, rpm, tar.gz) with scripts to run on a variety of platforms</a><br>
+Download: <a href="http://www.zaval.org/products/jrc-editor/download/">Available in multiple formats (zip, exe, rpm, tar.gz) with scripts to run on a variety of platforms</a><br>
 License: Open source - GNU General Public License</a>
 <p>Like Babel Fish, Zaval JRC Editor appear to be written for translators that are targeting two or more languages
 at once, it shows all the translations for all languages on the screen at one time.  Because it puts

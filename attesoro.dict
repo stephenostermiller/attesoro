@@ -1,4 +1,4 @@
-personal_ws-1.1 en 364
+personal_ws-1.1 en 375
 aboutItem
 aboutMenuItem
 AbstractTableModel
@@ -55,6 +55,7 @@ CTRL
 currentProperties
 currentProps
 currentYPos
+cvs
 CVS
 defaultCommentArea
 defaultCommentLabel
@@ -76,6 +77,7 @@ DocumentEvent
 DocumentListener
 editingSplitPane
 editMenu
+Epine
 Euro
 exe
 exitRoutine
@@ -91,6 +93,7 @@ findAgain
 findMenuItem
 FindOptions
 fullNames
+GanttProject
 getAbsoluteFile
 getColumnCount
 getColumnName
@@ -137,9 +140,11 @@ getX
 getY
 gif
 globalModified
+GmbH
 gotToFind
 gpl
 GridLayout
+gz
 hasFocus
 hasMoreElements
 hasMoreTokens
@@ -149,6 +154,7 @@ icu
 ImageIcon
 img
 indexOf
+Informatik
 ini
 init
 initProperties
@@ -203,6 +209,7 @@ keyTyped
 langMenu
 languageBox
 languageNode
+LargoRecipes
 lastFind
 layoutContainer
 LayoutManager
@@ -242,7 +249,9 @@ numberComponents
 NumberFormatException
 oldName
 openFile
-Ostermiller
+org
+ostermiller
+PDF
 png
 popup
 popupSize
@@ -310,6 +319,7 @@ showOpenDialog
 showOptionDialog
 showPopUpSmart
 Sobczuk
+SOLYP
 someModified
 splitpaneLocation
 startProperties
@@ -322,6 +332,7 @@ tablePopup
 td
 tempNode
 textSplitPane
+ThingamaBlog
 toArray
 toFind
 toString
