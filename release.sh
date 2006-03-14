@@ -1,7 +1,6 @@
 #!/bin/bash
 
-size=`ls -lah attesoro.jar`
-size=${size:38:4}
+size=`ls -lah attesoro.jar | grep -oE '[0-9]+[kK]'`
 if [ -z "`grep -i $size download.bte`" ]
 then
     echo "attesoro.jar size is $size but download.bte does not show that."
@@ -22,7 +21,7 @@ if [ "$FILES" ]
 then
 	echo Make: Uploading to web site: $FILES
     chmod -x install.sh
-	cp -r $FILES /home/steveo/pub/www/attesoro
+	cp -r $FILES /home/steveo/attesoro.org/
     chmod +x install.sh
 fi
 
