@@ -19,9 +19,9 @@ FILES="$@ $latestversion"
 FILES=${FILES/package.html/} 
 if [ "$FILES" ]
 then
-	echo Make: Uploading to web site: $FILES
+	echo Make: Copying to web site: $FILES
     chmod -x install.sh
-	cp -r $FILES /home/steveo/attesoro.org/
+	cp -r $FILES /home/steveo/sites/attesoro.org/
     chmod +x install.sh
 fi
 
