@@ -1,4 +1,4 @@
-personal_ws-1.1 en 375
+personal_ws-1.1 en 388 
 aboutItem
 aboutMenuItem
 AbstractTableModel
@@ -32,6 +32,7 @@ Attesoro's
 AWT
 baseName
 Birthdate
+boolean
 BorderLayout
 br
 bte
@@ -39,6 +40,7 @@ changedUpdate
 changelog
 charAt
 ClassLoader
+classpath
 clearSelection
 commentArea
 commentLabel
@@ -56,7 +58,6 @@ currentProperties
 currentProps
 currentYPos
 cvs
-CVS
 defaultCommentArea
 defaultCommentLabel
 defaultFile
@@ -73,10 +74,12 @@ deleteKeyMenuItem
 deleteKeyPopupMenuItem
 depthFirstEnumeration
 di
+displayURL
 DocumentEvent
 DocumentListener
 editingSplitPane
 editMenu
+endsWith
 Epine
 Euro
 exe
@@ -95,6 +98,7 @@ FindOptions
 fullNames
 GanttProject
 getAbsoluteFile
+getBundle
 getColumnCount
 getColumnName
 getComment
@@ -183,6 +187,7 @@ ItemEvent
 ItemListener
 itemStateChanged
 java
+javac
 JCheckBox
 JComboBox
 JFileChooser
@@ -206,6 +211,7 @@ KeyEvent
 keyMenu
 keyReleased
 keyTyped
+lang
 langMenu
 languageBox
 languageNode
@@ -221,6 +227,7 @@ ListSelectionModel
 loadMenuItem
 localeData
 LocaleElement
+login
 lsm
 Luiz
 Magnaghi
@@ -232,6 +239,7 @@ MouseAdapter
 MouseEvent
 mousePressed
 mre
+multi
 nascita
 navigationSplitPane
 newLocalePanel
@@ -251,6 +259,7 @@ oldName
 openFile
 org
 ostermiller
+pathname
 PDF
 png
 popup
@@ -275,6 +284,7 @@ revertKeyActionListener
 revertKeyMenuItem
 revertKeyPopupMenuItem
 rowNum
+runtime
 saveAll
 saveComment
 saveDir
@@ -324,9 +334,11 @@ someModified
 splitpaneLocation
 startProperties
 startsWith
+startup
 StringHelper
 stringsEqual
 StringTokenizer
+substring
 tableModel
 tablePopup
 td
@@ -364,6 +376,7 @@ VerticalLayout
 VK
 wasModified
 websiteMenuItem
+whitespace
 WindowAdapter
 windowClosing
 WindowEvent
