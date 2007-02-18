@@ -12,7 +12,7 @@ then
     exit 1
 fi
 
-latestversion=`grep -oE 'attesoro_[0-9]+_[0-9]+.jar' download.bte | sort | tail -1`
+latestversion=`grep -oE 'attesoro_[0-9]+_[0-9]+.jar' download.bte | sort | tail -n 1`
 cp attesoro.jar "$latestversion"
 
 FILES="$@ $latestversion"
