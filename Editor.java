@@ -1,7 +1,7 @@
 /*
  * Translation editor for Java properties files.
  *
- * Copyright (c) 2002-2004 by Stephen Ostermiller
+ * Copyright (c) 2002-2007 by Stephen Ostermiller
  * http://ostermiller.org/contact.pl?regarding=Attesoro
  *
  * Copyright (c) 2004 by Gerhard Leibrock
