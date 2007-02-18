@@ -62,7 +62,7 @@ public class Editor {
 	private DefaultMutableTreeNode workingNode = null;
 	private String workingName = null;
 	private int workingIndex = -1;
-	private ArrayList names;
+	private ArrayList<Name> names;
 	private JTree tree;
 	private DefaultTreeModel treeModel;
 	private DefaultMutableTreeNode top;
@@ -308,8 +308,8 @@ public class Editor {
 		return "";
 	}
 
-	private ArrayList getNames(String[] names){
-		ArrayList fullNames = new ArrayList(names.length);
+	private ArrayList<Name> getNames(String[] names){
+		ArrayList<Name> fullNames = new ArrayList<Name>(names.length);
 		for (int i=0; i<names.length; i++){
 			fullNames.add(new Name(names[i]));
 		}
@@ -1007,9 +1007,9 @@ public class Editor {
 		treePopup.add(addLangPopupMenuItem);
 
 		newLocalePanel = new JPanel(new GridLayout(6,1));
-		ArrayList languages = new ArrayList();
-		ArrayList countries = new ArrayList();
-		ArrayList variants = new ArrayList();
+		ArrayList<LocaleElement> languages = new ArrayList<LocaleElement>();
+		ArrayList<LocaleElement> countries = new ArrayList<LocaleElement>();
+		ArrayList<LocaleElement> variants = new ArrayList<LocaleElement>();
 		this.countryAll = labels.getString("all");
 		countries.add(new LocaleElement(labels.getString("all"), null));
 		variants.add(new LocaleElement(labels.getString("all"), null));
