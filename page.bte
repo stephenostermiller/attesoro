@@ -49,6 +49,8 @@ name=aboutLinkText %><%/bte.grp %></div>
 name=licenseLinkText %><%/bte.grp %></div>
 <li><div class=even><%bte.grp onDefault=ok %><%bte.inc 
 name=similarLinkText %><%/bte.grp %></div>
+<li><div class=odd><%bte.grp onDefault=ok %><%bte.inc 
+name=bugsLinkText %><%/bte.grp %></div>
 </ul>
 </div>
 
@@ -91,4 +93,5 @@ and send the translated file to Stephen. Existing locales:
 <%bte.tpl name=saveLinkText %><a href="save.html">Save</a><%/bte.tpl%>
 <%bte.tpl name=aboutLinkText %><a href="about.html">About</a><%/bte.tpl%>
 <%bte.tpl name=similarLinkText %><a href="similar.html">Similar Programs</a><%/bte.tpl%>
+<%bte.tpl name=bugsLinkText %><a href="bugs.html">Bugs/Features</a><%/bte.tpl%>
 <%/bte.doc%>

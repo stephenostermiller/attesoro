@@ -1,0 +1,13 @@
+<%bte.doc super="page.bte"%>
+<%bte.tpl name=pageTitle %>Attesoro Bugs<%/bte.tpl%>
+<%bte.tpl name=description %>Bugs and feature requests for Attesoro<%/bte.tpl%>
+<%bte.tpl name=keywords %>attesoro bugs, attesoro feature requests, attesoro issues<%/bte.tpl%>
+<%bte.tpl name=bugsLinkText %><b>Bugs/Features</b><%/bte.tpl%>
+<%bte.tpl name=pageContent %>
+<p>Attesoro bugs, feature requests, issues, and problems are tracked using bugzilla.<p>
+
+<p><a href="http://bugzilla.ostermiller.com/buglist.cgi?bug_status=__open__&amp;product=Attesoro">Check open issues</a></p>
+
+<p><a href="http://bugzilla.ostermiller.com/enter_bug.cgi?product=Attesoro">File a bug or request a feature</a></p>
+<%/bte.tpl%>
+<%/bte.doc%>
