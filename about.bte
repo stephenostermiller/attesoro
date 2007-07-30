@@ -16,7 +16,11 @@ languages and helped modern scientist decode Egyptian hieroglyphics.  Attesoro i
 Italian it roughly translates to "A Treasure".</p>
 
 <h2>Contributors</h2>
-<p>Several helpful people have contributed to Attesoro.  Thank you to Carlo Magnaghi for fixing bugs
-and writing documentation.  Also thank you to Wojciech Sobczuk for bug reports.</p>
+<p>Several helpful people have contributed to Attesoro.  
+<ul>
+<li>Thank you to Carlo Magnaghi for fixing bugs and writing documentation.</li>
+<li>Thank you to Wojciech Sobczuk for bug reports.</li>
+<li>Thank you to Jaroslaw Pekala for the Polish translation.</li>
+</p>
 <%/bte.tpl%>
 <%/bte.doc%>

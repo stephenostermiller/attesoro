@@ -5,6 +5,11 @@
 <%bte.tpl name=pageContent %>
 <h3>Version History</h3>
 
+<h4>Version 1.8</h4>
+<ul>
+<li>Polish translation</li>
+</ul>
+
 <h4>Version 1.7</h4>
 <ul>
 <li>German translation</li>

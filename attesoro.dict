@@ -1,4 +1,4 @@
-personal_ws-1.1 en 388 
+personal_ws-1.1 en 391 
 aboutItem
 aboutMenuItem
 AbstractTableModel
@@ -36,6 +36,7 @@ boolean
 BorderLayout
 br
 bte
+bugzilla
 changedUpdate
 changelog
 charAt
@@ -186,6 +187,7 @@ isVisible
 ItemEvent
 ItemListener
 itemStateChanged
+Jaroslaw
 java
 javac
 JCheckBox
@@ -261,6 +263,7 @@ org
 ostermiller
 pathname
 PDF
+Pekala
 png
 popup
 popupSize
