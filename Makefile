@@ -13,35 +13,34 @@ CVS=cvs -q
 
 all:
 	@$(MAKE) -s --no-print-directory junkclean
-	@$(MAKE) -s --no-print-directory spell
+	@$(MAKE) -s --no-print-directory target/spell/checked
 	@$(MAKE) -s --no-print-directory neaten
 	@$(MAKE) -s --no-print-directory website
 	@$(MAKE) -s --no-print-directory compile
 	@$(MAKE) -s --no-print-directory build
 
-spell: *.java *.bte
-	@echo Make: Running spell check.
-	@./spell.sh $?
-	@touch spell
+target/spell/checked: src/java/com/Ostermiller/attesoro/*.java src/www/bte/*.bte
+	@./src/build/spell/spell.sh $?
 
-website: *.bte
+website: src/java/com/Ostermiller/attesoro/*.java
 	@echo Make: Compiling web documents.
 	@bte $?
 	@touch website
 	
 websiteclean:
 	@echo Make: Removing web documents.
-	@rm -f `find . -name "*.bte" | sed s/.bte/.html/`	
+	@rm -f  target/www	
 
 .PHONY : compile
 compile: classes
 
-neaten: *.java
+target/neaten: src/java/com/Ostermiller/attesoro/*.java
+	@mkdir -p target
 	@./neaten.sh $?
 	@touch neaten
 	
 
-JAVAFILES=$(wildcard *.java)
+JAVAFILES=$(wildcard src/java/com/Ostermiller/attesoro/*.java)
 .PHONY: classes
 classes: $(JAVAFILES:.java=.class)
 	@# Write a bash script that will compile the files in the todo list
@@ -71,7 +70,7 @@ classes: $(JAVAFILES:.java=.class)
 .PHONY: classesclean
 classesclean: junkclean
 	@echo Make: Removing Java class files
-	@rm -f *.class
+	@rm -f target/classes
 
 .PHONY: junkclean	        
 junkclean:
@@ -86,20 +85,20 @@ buildclean: junkclean
 .PHONY: clean	        
 clean: buildclean websiteclean
 	@echo Make: Removing generated class files.
-	@rm -f *.class
+	@rm -f target/classes
 	
 .PHONY: allclean	        
 allclean: clean
 	@echo Make: Removing all built files.
-	@rm -f neaten spell  website release
+	@rm -f target
 
 .PHONY: build
 build: attesoro.jar
 
-attesoro.jar: *.java *.bte *.png *.ini *.class *.sh *.properties *.dict Makefile 
+attesoro.jar: src/java/com/Ostermiller/attesoro/*.java src/www/bte/*.bte *.png *.ini *.class *.sh *.properties *.dict Makefile 
 	@echo Make: Building jar file.
 	@mkdir -p com/Ostermiller/attesoro
-	@cp *.java *.bte *.png *.ini *.class *.sh *.properties *.dict Makefile com/Ostermiller/attesoro/
+	@cp src/java/com/Ostermiller/attesoro/*.java src/www/bte/*.bte *.png *.ini *.class *.sh *.properties *.dict Makefile com/Ostermiller/attesoro/
 	@mkdir -p com/Ostermiller/util
 	@cp ../util/StringHelper* ../util/UberProperties* ../util/PropertiesLexer* ../util/PropertiesToken* ../util/Browser* com/Ostermiller/util/
 	@jar mcfv Attesoro.mf attesoro.jar com/ > /dev/null
