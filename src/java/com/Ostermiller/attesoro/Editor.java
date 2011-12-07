@@ -1,7 +1,7 @@
 /*
  * Translation editor for Java properties files.
  *
- * Copyright (c) 2002-2007 by Stephen Ostermiller
+ * Copyright (c) 2002-2011 by Stephen Ostermiller
  * http://ostermiller.org/contact.pl?regarding=Attesoro
  *
  * Copyright (c) 2004 by Gerhard Leibrock
@@ -42,7 +42,7 @@ import com.Ostermiller.util.Browser;
 
 public class Editor {
 
-	private static String version = "1.8";
+	private static String version = "1.8.01";
 	private static ResourceBundle labels = ResourceBundle.getBundle("com.Ostermiller.attesoro.Editor",  Locale.getDefault());
 	private static UberProperties props = new UberProperties();
 	private static String[] userFile = new String[] {".java", "com","Ostermiller","attesoro","Editor.ini"};
@@ -80,7 +80,7 @@ public class Editor {
 	private final static Pattern ALREADY_TRANSLATED_FILE = Pattern.compile("^.*_(?:ar|be|bg|ca|cs|da|de|el|en|es|et|fi|fr|hi|hr|hu|is|it|iw|ja|ko|la|lt|lv|mk|nl|no|pl|pt|ro|ru|sh|sk|sl|sq|sr|sv|th|tr|uk|zh)(?:(?:_(?:AE|AL|AR|AT|AU|BE|BG|BH|BO|BR|BY|CA|CH|CL|CN|CO|Co|CR|CZ|DE|DK|DO|DZ|EC|EE|EG|ES|FI|FR|GB|GR|GT|HK|HN|HR|HU|IE|IL|IN|IQ|IS|IT|JO|JP|KR|KW|LB|LT|LU|LV|LY|MA|MK|MX|NI|NL|NO|NY|NZ|OM|PA|PE|PL|PR|PT|PY|QA|RO|RU|SA|SD|SE|SI|SK|SV|SY|TH|TN|TR|TW|UA|US|UY|VE|YE|YU|ZA))(?:_(?:[A-Za-z0-9]+))?)?\\.properties$");
 
 	private Name getName(int ind){
-		return (Name)names.get(ind);
+		return names.get(ind);
 	}
 
 	/**
@@ -94,7 +94,7 @@ public class Editor {
 		Name n = new Name(name);
 		n.isModified = true;
 		names.add(n);
-		Collections.sort(names);
+		Collections.<Name>sort(names);
 		TranslationData data = (TranslationData)top.getUserObject();
 		data.properties.setProperty(name, "");
 		data.addremove = true;
@@ -116,7 +116,7 @@ public class Editor {
 			data.properties.setProperty(newName, data.properties.getProperty(oldName), data.properties.getComment(oldName));
 			data.properties.setProperty(oldName, null);
 		}
-		Collections.sort(names);
+		Collections.<Name>sort(names);
 		int rowNum = names.indexOf(n);
 		table.setRowSelectionInterval(rowNum, rowNum);
 		table.scrollRectToVisible(table.getCellRect(rowNum, 0, true));
@@ -316,7 +316,7 @@ public class Editor {
 		return fullNames;
 	}
 
-	private class Name implements Comparable {
+	private class Name implements Comparable<Name> {
 		public String name;
 		public boolean isDefault = false;
 		public boolean isModified = false;
@@ -325,11 +325,11 @@ public class Editor {
 			this.name = name;
 		}
 
-		public int compareTo(Object o){
+		public int compareTo(Name o){
 			if (o == null) return -1;
-			if (!(o instanceof Name)) return -1;
-			return name.compareTo(((Name)o).name);
+			return name.compareTo(o.name);
 		}
+
 		public String toString(){
 			return name;
 		}
@@ -387,7 +387,7 @@ public class Editor {
 		// (the left part of the <KEY>=>VALUE> inside the .properties file
 		names = getNames(props.propertyNames());
 		// sort it, add it to the GUI
-		Collections.sort(names);
+		Collections.<Name>sort(names);
 		top.removeAllChildren();
 		top.setUserObject(new TranslationData(baseName, "", props));
 
@@ -1023,9 +1023,9 @@ public class Editor {
 				variants.add(new LocaleElement(labels.getString(key), key.substring(8)));
 			}
 		}
-		Collections.sort(languages);
-		Collections.sort(countries);
-		Collections.sort(variants);
+		Collections.<LocaleElement>sort((java.util.List<LocaleElement>)languages);
+		Collections.<LocaleElement>sort((java.util.List<LocaleElement>)countries);
+		Collections.<LocaleElement>sort((java.util.List<LocaleElement>)variants);
 		languageBox = new JComboBox(languages.toArray(new LocaleElement[languages.size()]));
 		newLocalePanel.add(new JLabel(labels.getString("language")), 0);
 		newLocalePanel.add(languageBox, 1);
@@ -1044,7 +1044,7 @@ public class Editor {
 		frame.setVisible(true);
 	}
 
-	private class LocaleElement implements Comparable {
+	private class LocaleElement implements Comparable<LocaleElement> {
 		public String name;
 		public String code;
 		public LocaleElement(String name, String code){
@@ -1054,15 +1054,10 @@ public class Editor {
 		public String toString(){
 			return (name + ((code == null)?"":(" (" + code + ")")));
 		}
-		public int compareTo(Object o){
-			if (o instanceof LocaleElement){
-				LocaleElement l = (LocaleElement)o;
-				if (code == null) return -1;
-				if (l.code == null) return 1;
-				return name.compareTo(l.name);
-			} else {
-				return -1;
-			}
+		public int compareTo(LocaleElement l){
+			if (code == null) return -1;
+			if (l.code == null) return 1;
+			return name.compareTo(l.name);
 		}
 	}
 

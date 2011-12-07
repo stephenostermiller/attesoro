@@ -7,11 +7,11 @@
 <p align=center>A free, open source, translation editor for Java programs.</p>
 
 <p>Java programs that support internationalization (i18n) usually use
-<a href="http://java.sun.com/j2se/1.4.1/docs/api/java/util/ResourceBundle.html">resource 
+<a href="http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html">resource 
 bundles</a> and keep their translatable Strings in 
-<a href="http://java.sun.com/j2se/1.4.1/docs/api/java/util/Properties.html">properties 
-files</a>. (See Sun's Java Tutorial on 
-<a href="http://java.sun.com/docs/books/tutorial/i18n/">i18n</a>.)  Unfortunately,
+<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html">properties 
+files</a>. (See Oracle's Java Tutorial on 
+<a href="http://docs.oracle.com/javase/tutorial/i18n/">i18n</a>.)  Unfortunately,
 properties files are hard to edit for translators.</p>
 
 <table class=advantages summary="Problems with Java internationalization showing how Attesoro can help.">
@@ -23,8 +23,8 @@ properties files are hard to edit for translators.</p>
 <tr class=odd><td class=problem>Properties files are stored in
 the ISO 8859-1 character encoding which does not support many international 
 characters.  International characters have to be escaped with \u0000 style
-escape sequences.  Sun recommends a command line tool, 
-<a href="http://java.sun.com/j2se/1.4.1/docs/tooldocs/tools.html#intl">native2ascii</a>,
+escape sequences.  Oracle recommends a command line tool, 
+<a href="http://docs.oracle.com/javase/6/docs/technotes/tools/#intl">native2ascii</a>,
 to convert a document from a character set to ISO 8859-1 with escape sequences.  
 Most translators would rather save documents directly and never have to use a 
 command line.</td>

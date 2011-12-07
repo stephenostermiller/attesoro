@@ -57,7 +57,7 @@ name=bugsLinkText %><%/bte.grp %></div>
 <div class=newsItem>
 If you are using Attesoro to do some translation, please translate Attesoro 
 itself as well.  Translate 
-<a href="http://www.gjt.org/servlets/JCVSlet/show/gjt/com/Ostermiller/attesoro/Editor.properties/HEAD">Editor.properties</a>
+<a href="Editor.properties">Editor.properties</a>
 and send the translated file to Stephen. Existing locales:
 <ul>
 <li>English</li>
@@ -73,7 +73,7 @@ and send the translated file to Stephen. Existing locales:
 <h1 align=center><a name="content"><%bte.inc name=pageTitle %></a></h1>
 <div class=content><%bte.inc name=pageContent %></div>
 <br clear=all>
-<div class=copyright><p>Copyright &copy; 2002-2006 <a href="http://ostermiller.org/contact.pl?regarding=Attesoro" class=mail>Stephen Ostermiller</a></p></div>
+<div class=copyright><p>Copyright &copy; 2002-2011 <a href="http://ostermiller.org/contact.pl?regarding=Attesoro" class=mail>Stephen Ostermiller</a></p></div>
 <div class=sitenav><a href="http://ostermiller.org/">ostermiller.org</a></div>
 </td>
 </tr>

@@ -1,2 +1,6 @@
 AddType application/octet-stream jar
 AddType application/vnd.sun.xml.writer sxw
+
+<FilesMatch "\.properties$">
+ForceType 'text/plain; charset=ISO-8859-1' 
+</FilesMatch>

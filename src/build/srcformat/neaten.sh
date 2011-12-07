@@ -1,8 +1,12 @@
 #!/bin/bash
 
+set -e
+
 tablist=""
 
 files=$@
+
+mkdir -p target/neaten
 
 for file in $files
 do
@@ -10,6 +14,7 @@ do
     if [ ! -e $file ]
     then
         echo "$file does not exists."
+        exit 1
     elif [ -e ${file%.java}.lex ]
     then
         generated='1'
@@ -26,6 +31,8 @@ do
 done
 if [ "$tablist" != "" ]
 then
-	java -classpath ../../.. com.Ostermiller.util.Tabs -w 4 -tv $tablist
+	java -classpath target/depend/ostermillerutils/ostermillerutils.jar com.Ostermiller.util.Tabs -w 4 -tv $tablist
 fi
 
+
+touch target/neaten/neatened

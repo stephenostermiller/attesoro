@@ -14,31 +14,31 @@ A translator is busy translating <a href="http://ostermiller.org/tulipchain/">Tu
 <table class=even><tr><td>
 Attesoro as it looks when it is first run, before any files are open.
 </td><td>
-<img src="http://attesoro.org/blank.png" width=561 height=391 alt="Attesoro as it looks when it is first run, before any files are open.">
+<img src="blank.png" width=561 height=391 alt="Attesoro as it looks when it is first run, before any files are open.">
 </td></tr></table>
 
 <table class=odd><tr><td>
 Attesoro open file dialog
 </td><td>
-<img src="http://attesoro.org/opendialog.png" width=512 height=350 alt="Attesoro open file dialog.">
+<img src="opendialog.png" width=512 height=350 alt="Attesoro open file dialog.">
 </td></tr></table>
 
 <table class=even><tr><td>
 Attesoro after opening access_rb.properties.
 </td><td>
-<img src="http://attesoro.org/open.png" width=561 height=391 alt="Attesoro after opening access_rb.properties.">
+<img src="open.png" width=561 height=391 alt="Attesoro after opening access_rb.properties.">
 </td></tr></table>
 
 <table class=odd><tr><td>
 Attesoro locale creation dialog.
 </td><td>
-<img src="http://attesoro.org/create.png" width=268 height=232 alt="Attesoro locale creation dialog.">
+<img src="create.png" width=268 height=232 alt="Attesoro locale creation dialog.">
 </td></tr></table>
 
 <table class=even><tr><td>
 Selecting a language and a key, then translating the text.
 </td><td>
-<img src="http://attesoro.org/translate.png" width=561 height=391 alt="Selecting a language and a key, then translating the text.">
+<img src="translate.png" width=561 height=391 alt="Selecting a language and a key, then translating the text.">
 </td></tr></table>
 
 <%/bte.tpl%>

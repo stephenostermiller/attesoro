@@ -1,4 +1,4 @@
-personal_ws-1.1 en 391 
+personal_ws-1.1 en 389 
 aboutItem
 aboutMenuItem
 AbstractTableModel
@@ -22,7 +22,6 @@ addremove
 addTreeSelectionListener
 addWindowListener
 alreadyTranslatedFileMatcher
-anoncvs
 Antunes
 args
 ArrayList
@@ -58,7 +57,6 @@ CTRL
 currentProperties
 currentProps
 currentYPos
-cvs
 defaultCommentArea
 defaultCommentLabel
 defaultFile

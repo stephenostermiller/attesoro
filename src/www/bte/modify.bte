@@ -5,28 +5,11 @@
 <%bte.tpl name=hackingLinkText %><b>Hacking</b><%/bte.tpl%>
 <%bte.tpl name=pageContent %>
 <h2>Getting the Source</h2>
-<p>The first  step in modifying Attesoro is looking at the sources.  There 
-are two ways to get the source code.  attesoro.jar contains all the source code.
-You can get the source code from the jar file.  Either rename attesoro.jar to
-attesoro.zip (different extensions for the same format) and use your favorite
-zip file extractor, or use the following command line that comes with the
-Java development kit:<br>
-<i>jar&nbsp;xfv&nbsp;attesoro.jar</i><br>
-The second way to get the source code is through CVS.  The source code is 
-checked into the CVS server on the <a href="http://gjt.org/">Giant Java Tree</a>.
-You may <a href="http://www.gjt.org/servlets/JCVSlet/list/gjt/com/Ostermiller/attesoro/">browse 
-the CVS repository</a> or use your favorite CVS client
-to get the source.  Here is the command that will get the source using the
-common command line client:<br>
-<i>cvs&nbsp;-D&nbsp;":pserver:anoncvs@cvs.gjt.org:/gjt/cvsroot"&nbsp;login</i><br>
-use password "anoncvs"<br>
-<i>cvs&nbsp;-D&nbsp;":pserver:anoncvs@cvs.gjt.org:/gjt/cvsroot"&nbsp;checkout&nbsp;java/com/Ostermiller</i><br>
-<p>
-You will find the source code in the com/Ostermiller/attesoro directory.  Attesoro
-also uses some source code from the com/Ostermiller/util directory.
+<p>The first  step in modifying Attesoro is looking at the sources.  The source code can be downloaded from:
+<a href="attesoro.VERSION.src.tar.gz">attesoro.VERSION.src.tar.gz</a>
 
 <h2>Translating</h2>
-Attesoro itself can be localized.  The properties file to translate is <a href="http://www.gjt.org/servlets/JCVSlet/show/gjt/com/Ostermiller/attesoro/Editor.properties/HEAD">com/Ostermiller/attesoro/Editor.properties</a>.
+Attesoro itself can be localized.  The properties file to translate is <a href="Editor.properties">com/Ostermiller/attesoro/Editor.properties</a>.
 It is currently only English.  You may use Attesoro to translate itself if you desire.  Once Attesoro
 has been translated please send the translation to Stephen so that he can include it in the next release.
 

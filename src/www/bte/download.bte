@@ -4,17 +4,13 @@
 <%bte.tpl name=keywords %>attesoro, download, download, jar, java, jre, j2se<%/bte.tpl%>
 <%bte.tpl name=downloadLinkText %><b>Download</b><%/bte.tpl%>
 <%bte.tpl name=pageContent %>
-<p class=odd><big><b><a href="http://java.sun.com/webapps/getjava/BrowserRedirect?locale=en&host=www.java.com:80" target="_blank">Download</a></b></big>
-and install the Java2 Runtime Environment version 1.5 or later (J2SE JRE) from java.sun.com 
+<p class=odd><big><b><a href="http://www.java.com/en/download/" target="_blank">Download</a></b></big>
+and install the Java Runtime Environment version 6 or later from java.com 
 if you do not already have it installed.</p>
 
-<p class=even><big><b><a href="attesoro_1_8.jar">Download</a></b></big> the latest version (Version 1.8) of Attesoro 
-(Executable Jar - 218k)</p>
+<p class=even><big><b><a href="attesoro.VERSION.jar">Download binary</a></b></big> -- Version VERSION, Executable Jar</p>
 
-<p>
-Version 1.8 - Polish translation.<br>
-Version 1.7 - German translation, code cleanup.<br>
-Version 1.6 - Italian and French translations, a new actions menu with a "next key" menu item.<br>
-</p>
+<p class=even><big><b><a href="attesoro.VERSION.src.tar.gz">Download source</a></b></big> -- Version VERSION git source repository</p>
+
 <%/bte.tpl%>
 <%/bte.doc%>
