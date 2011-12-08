@@ -2,7 +2,7 @@
 
 set -e
 
-VERSION=1.08.00
+VERSION=1.08.01
 
 TOPDIR=`pwd`
 BINFILE=ostermillerutils-$VERSION-bin.tar.gz
@@ -17,9 +17,9 @@ if [ ! -e $BINFILE ]
 then
     wget http://ostermiller.org/utils/$BINFILE
     tar xfz $BINFILE
-    jar -xf ostermillerutils-$VERSION/ostermillerutils-1.08.00.jar
+    jar -xf ostermillerutils-$VERSION/ostermillerutils-$VERSION.jar
     rm -f  ostermillerutils.jar
-    ln -s ostermillerutils-$VERSION/ostermillerutils-1.08.00.jar ostermillerutils.jar
+    ln -s ostermillerutils-$VERSION/ostermillerutils-$VERSION.jar ostermillerutils.jar
 fi
 
 cd $TOPDIR
