@@ -22,6 +22,15 @@ spell: target/spell/checked
 
 target/spell/checked: src/java/com/Ostermiller/attesoro/*.java src/www/bte/*.bte
 	./src/build/spell/spell.sh $?
+        
+.PHONY: www
+www: website
+
+.PHONY: web
+web: website
+
+.PHONY: site
+site: website
 
 .PHONY: website
 website: bundle
